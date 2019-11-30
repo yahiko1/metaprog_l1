@@ -3,10 +3,12 @@ from anytree import NodeMixin
 
 class StructHolder(NodeMixin):
     def __init__(self, parent, children, prop=str, sign=str, str_found=int, position=int,
-                 path=None, comment=str, scope=bool, is_closed=bool, mod=int):
+                 path=None, comment=str, scope=bool, is_closed=bool, mod=int, doc_comment=str(), row=str()):
         self.is_closed = False
         self.scope = scope  # true = global, false = local
         self.comment = comment
+        self.doc_comment = doc_comment
+        self.row = row
         self.pathf = path
         self.sign = sign
         self.str_found = str_found

@@ -12,12 +12,14 @@ a_m = ['public', 'private', 'protected', 'internal', 'protected internal', 'priv
 d_t = ['bool', 'byte', 'sbyte', 'short', 'ushort', 'int', 'uint', 'long', 'float', 'double',
        'decimal', 'char', 'string', 'object']
 rexId = re.compile(r'^[a-zA-Z]\w*$')
+all_token_list = []
 
 
 def run(filename):
     token_list = []
     path = []
     comment_buff = ""
+    doc_comment_buff = ""
     state = 0
     flag = False
     f = open(filename, "r", encoding='utf-8')
@@ -28,6 +30,11 @@ def run(filename):
 
         # is comment
         if state == 0:
+            if is_doc_comment(line):
+                flag = True
+                doc_comment_buff += line
+                line_index += 1
+                continue
             if is_single_string_comment(line):
                 flag = True
                 comment_buff += line
@@ -72,7 +79,9 @@ def run(filename):
                 p = re.search(class_pattern, line)
                 path.append(p.group(0))
                 mod = 1  # class mod ident
-                token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token_list.append(token)
+                all_token_list.append(token)
                 p = None
                 new_path = None
 
@@ -82,7 +91,9 @@ def run(filename):
                 p = re.search(struct_pattern, line)
                 path.append(p.group(0))
                 mod = 2  # struct mod ident
-                token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token_list.append(token)
+                all_token_list.append(token)
                 p = None
                 new_path = None
 
@@ -92,7 +103,9 @@ def run(filename):
                 p = re.search(interface_pattern, line)
                 path.append(p.group(0))
                 mod = 3  # class mod ident
-                token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token_list.append(token)
+                all_token_list.append(token)
                 p = None
                 new_path = None
 
@@ -102,7 +115,9 @@ def run(filename):
                 p = re.search(namespace_pattern, line)
                 path.append(p.group(0))
                 mod = 4  # class mod ident
-                token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token_list.append(token)
+                all_token_list.append(token)
                 p = None
                 new_path = None
 
@@ -110,7 +125,9 @@ def run(filename):
         if re.search(import_pattern, line) and re.search(";$", line):
             p = re.search(import_pattern, line)
             mod = 5  # import mod ident
-            token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+            token_list.append(token)
+            all_token_list.append(token)
             line_index += 1
             continue
 
@@ -121,7 +138,9 @@ def run(filename):
                     p = re.search(method_pattern, line)
                     path.append(p.group(0))
                     mod = 0  # method mod ident
-                    token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+                    token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                    token_list.append(token)
+                    all_token_list.append(token)
                     p = None
                     new_path = None
 
@@ -131,7 +150,9 @@ def run(filename):
                     p = re.search(method_group_pattern, line)
                     path.append(p.group(0))
                     mod = 0  # method mod ident
-                    token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+                    token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                    token_list.append(token)
+                    all_token_list.append(token)
                     p = None
                     new_path = None
 
@@ -139,7 +160,9 @@ def run(filename):
         if re.search(non_indent_var_pattern, line) and re.search(r' return ', line) == None:
             p = re.search(non_indent_var_pattern, line)
             mod = 6  # var mod ident
-            token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+            token_list.append(token)
+            all_token_list.append(token)
             line_index += 1
             continue
 
@@ -147,7 +170,9 @@ def run(filename):
         if re.search(var_pattern, line) and re.search(r' return ', line) == None:
             p = re.search(var_pattern, line)
             mod = 6  # var mod ident
-            token_list.append(fill_struct_holder(line, p, mod, line_index, path, comment_buff))
+            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+            token_list.append(token)
+            all_token_list.append(token)
 
         # comment buff cleaning stat
         if flag is False or state != 1:
@@ -222,11 +247,14 @@ def build_catalog_tree(catalog_name):
                     if not t.name.endswith(".cs"):
                         q.put(t)
 
+    ways = ""
     answer = ""
     for pre, fill, node in RenderTree(root):
         treestr = u"%s%s  (%s)" % (pre, node.name, node.way)
         answer += treestr
         answer += '\n'
+        ways += node.way
+        ways += '\n'
         if node.is_leaf:
             w = node.way
             # token_list = run(node.way)
@@ -234,21 +262,8 @@ def build_catalog_tree(catalog_name):
 
         print(treestr.ljust(8))
 
-    return path_list, root, answer
+    return path_list, root, answer, ways
 
-
-# for it in p_l:
-#     print(it.name, it.pathf)
-
-# filename = r"text.cs"
-# t_l = run(filename)
-
-# print(c)
-# for it in range(0, len(t_l)):
-#     print(t_l[it].prop, t_l[it].sign, t_l[it].str_found,  t_l[it].position, t_l[it].mod,
-#           t_l[it].pathf, t_l[it].scope, t_l[it].comment)
-
-# build_file_tree(t_l, r'text.cs')
 
 
 def show_file(root):
@@ -262,36 +277,55 @@ def show_file(root):
 def show_all_files(catalog_root):
     for pre, fill, node in RenderTree(catalog_root):
         if node.is_leaf and node.way.find('.cs') != -1:
-            print(node.way)
+            # print(node.way)
             token_list = run(node.way)
             node.file = build_file_tree(token_list, node.way)
-            show_file(node.file)
+            # show_file(node.file)
 
 
-# p_l, catalog_root, answer = build_catalog_tree(r'src')
-p_l, catalog_root, answer = build_catalog_tree(r'srcAzur')
-
-print(answer)
-
-# # # get all children of current node
-show_all_files(catalog_root)
-child = catalog_root.children
-for ch in child:
-    print(ch.name, ch.pathf, ch.way)
-print(catalog_root.name)
-
-# press_f = open('answer.txt', 'w', encoding='utf-8')
-# press_f.write(answer)
-# press_f.close()
+# res_dir = r'C:\yahiko\python_things\l1_v2\res'
+res_dir = r'C:\yato\python_things\l1_v2\srcAzur'
 
 
-# res_dir = r'C:\yato\python_things\l1_v2\res'
-res_dir = r'C:\yato\python_things\l1_v2\res_azur'
+def make_way(ways):
+    way = ways.splitlines()
+    new_way = ""
+    for i in range(len(way)):
+        w = str(way[i])
+        aps = w.split('\\')
+        word = ""
+        for a in aps:
+            word += a
+            word += '.'
+        new_way += word
+        new_way += '\n'
+    return new_way
 
-HTMLmaker.create_index(res_dir)
-HTMLmaker.create_article(answer, res_dir)
-HTMLmaker.create_root(res_dir)
-# HTMLmaker.create_dir_tree(res_dir, catalog_root)
-# HTMLmaker.create_target_html(res_dir, catalog_root)
-HTMLmaker.create_dir_tree(res_dir, catalog_root)
+def main():
+    # print("type key(f, c, cr): ")
+    # mode = input()
+    # print('type full path to "ANYNAME" crs folder')
+    # src = input()
+    # print('type full path to "ANYNAME" result folder')
+    # res = input()
+    # print('processing...')
 
+    src = r'srcAzur'
+    res = r'C:\yato\python_things\l1_v2\tazasho'
+
+    p_l, catalog_root, answer, ways = build_catalog_tree(src)
+
+    way = make_way(ways)
+
+    show_all_files(catalog_root)
+    HTMLmaker.create_index(res)
+    HTMLmaker.create_article(answer, res, way)
+    HTMLmaker.create_alphabet(all_token_list, res)
+    HTMLmaker.create_root(res)
+    HTMLmaker.create_dir_tree(res, catalog_root)
+
+    # for t in all_token_list:
+    #     print(t.row)
+
+
+main()
