@@ -303,6 +303,7 @@ def make_way(ways):
         new_way += '\n'
     return new_way
 
+
 def main():
     print("type key(f, c, cr): ")
     mode = input()
