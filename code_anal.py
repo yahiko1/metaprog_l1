@@ -132,8 +132,8 @@ def run(filename):
             continue
 
         # method pattern search
-        if re.search(method_pattern, line) and not re.search(";$", line):
-            if re.search(' class ', line) is None:
+        if re.search(method_pattern, line) and re.search(";$", line) is None:
+            if re.search(key_words, line) is None:
                 if re.search("{$", line) or re.search("^ *{", file[file.index(l)+1]):
                     p = re.search(method_pattern, line)
                     path.append(p.group(0))
@@ -144,8 +144,8 @@ def run(filename):
                     p = None
                     new_path = None
 
-        if re.search(method_group_pattern, line) and (not re.search(";$", line) and not re.search("catch", line)):
-            if re.search(' class ', line) is None:
+        if re.search(method_group_pattern, line) and not re.search(";$", line):
+            if re.search(key_words, line) is None:
                 if re.search("{$", line) or re.search("^ *{", file[file.index(l)+1]):
                     p = re.search(method_group_pattern, line)
                     path.append(p.group(0))
@@ -157,26 +157,29 @@ def run(filename):
                     new_path = None
 
         # non indent var pattern search
-        if re.search(non_indent_var_pattern, line) and re.search(r' return ', line) == None:
-            p = re.search(non_indent_var_pattern, line)
-            mod = 6  # var mod ident
-            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
-            token_list.append(token)
-            all_token_list.append(token)
-            line_index += 1
-            continue
+        if re.search(non_indent_var_pattern, line):
+            if re.search(key_words, line) is None:
+                p = re.search(non_indent_var_pattern, line)
+                mod = 6  # var mod ident
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token_list.append(token)
+                all_token_list.append(token)
+                line_index += 1
+                continue
 
         # var pattern
-        if re.search(var_pattern, line) and re.search(r' return ', line) == None:
-            p = re.search(var_pattern, line)
-            mod = 6  # var mod ident
-            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
-            token_list.append(token)
-            all_token_list.append(token)
+        if re.search(var_pattern, line):
+            if re.search(key_words, line) is None:
+                p = re.search(var_pattern, line)
+                mod = 6  # var mod ident
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token_list.append(token)
+                all_token_list.append(token)
 
         # comment buff cleaning stat
         if flag is False or state != 1:
             comment_buff = ""
+            doc_comment_buff = ""
         flag = False
 
         # next line
@@ -265,12 +268,11 @@ def build_catalog_tree(catalog_name):
     return path_list, root, answer, ways
 
 
-
 def show_file(root):
     for pre, fill, node in RenderTree(root):
         if node.sign == 'root':
             treestr = u"%s  (%s)" % (pre, node.sign)
-        treestr = u"%s%s%s" % (pre, node.prop, node.sign)
+        treestr = u"%s%s%s" % (pre, node.row, node.doc_comment)
         print(treestr.ljust(8))
 
 
@@ -302,19 +304,18 @@ def make_way(ways):
     return new_way
 
 def main():
-    # print("type key(f, c, cr): ")
-    # mode = input()
-    # print('type full path to "ANYNAME" crs folder')
-    # src = input()
-    # print('type full path to "ANYNAME" result folder')
-    # res = input()
-    # print('processing...')
+    print("type key(f, c, cr): ")
+    mode = input()
+    print('type full path to "ANYNAME" src folder')
+    src = input()
+    print('type full path to "ANYNAME" result folder')
+    res = input()
+    print('processing...')
 
-    src = r'srcAzur'
-    res = r'C:\yato\python_things\l1_v2\tazasho'
+    # src = r'srcAzur'
+    # res = r'C:\yato\python_things\l1_v2\tazasho'
 
     p_l, catalog_root, answer, ways = build_catalog_tree(src)
-
     way = make_way(ways)
 
     show_all_files(catalog_root)
@@ -324,8 +325,9 @@ def main():
     HTMLmaker.create_root(res)
     HTMLmaker.create_dir_tree(res, catalog_root)
 
-    # for t in all_token_list:
-    #     print(t.row)
-
+    # filename = r'PSObjectExtensions.cs'
+    # token_list = run(filename)
+    # root = build_file_tree(token_list, filename)
+    # show_file(root)
 
 main()

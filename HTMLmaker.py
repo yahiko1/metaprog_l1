@@ -31,9 +31,10 @@ def html_template(file):
 def html_cs_template(file, html_name):
     answer = ""
     for pre, fill, node in RenderTree(file):
-        treestr = u"%s%s  (%s)" % (pre, node.prop, node.sign)
+        treestr = u"%s%s  %s" % (pre, node.prop, node.sign)
         answer += treestr
         answer += '\n'
+        answer += node.doc_comment.replace('<', '%')
     f = open(html_name, "w", encoding='utf-8')
     html_template(f)
     f.write('''
@@ -168,4 +169,4 @@ def create_alphabetic_target(res_dir, alpha, alpha_up, all_token_list):
     f.write('</div> </p> <div>')
     for token in all_token_list:
         if token.sign.startswith(alpha) or token.sign.startswith(alpha_up):
-            f.write('<p>' + token.sign + ' (' + token.mode + ') ' + '<p>')
+            f.write('<p>' + token.sign + ' (' + str(token.mod) + ') ' + '<p>')

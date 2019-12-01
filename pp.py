@@ -13,6 +13,9 @@ non_indent_var_pattern = r'[a-zA-Z<>]+ [_a-zA-Z][a-zA-Z0-9<>.]* *;'
 var_pattern = r'var [_a-zA-Z][a-zA-Z0-9<>]* = '
 
 
+key_words = ''' as | base | break | case | catch | checked | continue | default | do | else | event | explicit | extern | fixed | for | foreach | goto | if | implicit | in | is | lock | new | null | operator | verride | params | ref | sealed | return | sizeof | stackalloc | switch | this | throw | try | typeof | uint | unchecked | unsafe | while '''
+
+
 def is_comment_present(line=str()):
     pos = line.find('//')
     return pos

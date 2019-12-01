@@ -2,6 +2,10 @@
   <dictionary name="yahik">
     <words>
       <w>azur</w>
+      <w>extern</w>
+      <w>stackalloc</w>
+      <w>ulong</w>
+      <w>verride</w>
     </words>
   </dictionary>
 </component>
