@@ -9,7 +9,7 @@ left_block = ''
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
             'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 alphabet_up = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
-            'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+               'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 def html_template(file):
     file.write(
@@ -34,7 +34,11 @@ def html_cs_template(file, html_name):
         treestr = u"%s%s  %s" % (pre, node.prop, node.sign)
         answer += treestr
         answer += '\n'
-        answer += node.doc_comment.replace('<', '%')
+        if len(node.doc_comment) == 0 and node.is_root is False:
+            answer += 'Documentation have not created'
+            answer += '\n'
+        else:
+            answer += node.doc_comment.replace('<', '%')
     f = open(html_name, "w", encoding='utf-8')
     html_template(f)
     f.write('''

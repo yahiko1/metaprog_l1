@@ -307,7 +307,7 @@ def make_way(ways):
 def main():
     print("type key(f, c, cr): ")
     mode = input()
-    print('type full path to "ANYNAME" src folder')
+    print('type short path to "ANYNAME" crs folder (only name of src folder)')
     src = input()
     print('type full path to "ANYNAME" result folder')
     res = input()
@@ -330,5 +330,6 @@ def main():
     # token_list = run(filename)
     # root = build_file_tree(token_list, filename)
     # show_file(root)
+
 
 main()

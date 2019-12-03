@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc654d49-3131-46f7-86f6-12f325343a55" name="Default Changelist" comment="">
+    <list default="true" id="dc654d49-3131-46f7-86f6-12f325343a55" name="Default Changelist" comment="ff">
+      <change beforePath="$PROJECT_DIR$/ a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ g.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ i.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ j.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ k.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ l.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ m.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ p.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ q.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ r.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ root.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ s.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ src.PSObjectExtensions.cs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ t.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ u.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ v.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ w.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ y.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ z.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTMLmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLmaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphabet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code_anal.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_anal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dir_tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ a.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ b.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ c.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ d.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ d.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ e.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ f.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ g.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ h.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ i.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ i.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ j.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ j.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ k.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ k.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ l.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ l.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ m.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ m.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ n.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ o.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ o.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ p.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ q.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ q.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ r.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ root.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ root.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ s.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ src.PSObjectExtensions.cs.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ src.PSObjectExtensions.cs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ t.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ t.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ u.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ u.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ v.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ v.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ w.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ w.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ x.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ x.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ y.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ y.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/ z.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/ z.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/alphabet.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/alphabet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/dir_tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/dir_tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +91,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="ProjectId" id="1TpNGtvvTKiiOzNfzL2dsLMPPxU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -126,7 +191,8 @@
       <workItem from="1575125878305" duration="4648000" />
       <workItem from="1575137409713" duration="3084000" />
       <workItem from="1575201132570" duration="751000" />
-      <workItem from="1575210659678" duration="1101000" />
+      <workItem from="1575210659678" duration="4609000" />
+      <workItem from="1575399909322" duration="585000" />
     </task>
     <task id="LOCAL-00001" summary="f">
       <created>1575114928070</created>
@@ -142,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575211666193</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ff">
+      <created>1575213569157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575213569157</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +252,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/l1_v2$test.coverage" NAME="test Coverage Results" MODIFIED="1575128800710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/l1_v2$code_anal.coverage" NAME="code_anal Coverage Results" MODIFIED="1575133695771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/l1_v2$code_anal.coverage" NAME="code_anal Coverage Results" MODIFIED="1575215585450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
