@@ -8,12 +8,87 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:34.479097<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:30:54.896386<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\Accounts\Authenticators\AuthenticationHelpers.cs)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Commands.Common.Authentication)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Commands.Common.Authentication.Abstractions)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.IdentityModel.Clients.ActiveDirectory)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.PowerShell.Authenticators)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;internal&nbsp;static&nbsp;&nbsp;(class&nbsp;AuthenticationHelpers)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;tenantString&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;PromptBehavior.Always;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;PromptBehavior.Never;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;(return&nbsp;PromptBehavior.Auto;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\Accounts\Authenticators\AuthenticationHelpers.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.Common.Authentication
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 11 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.Common.Authentication.Abstractions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 12 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.IdentityModel.Clients.ActiveDirectory
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 13 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.PowerShell.Authenticators
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 15 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;internal&nbsp;static&nbsp;&nbsp;class&nbsp;AuthenticationHelpers
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;internal&nbsp;static&nbsp;&nbsp;string&nbsp;GetAuthority(IAzureEnvironment&nbsp;environment,&nbsp;string&nbsp;tenant)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 28 </li> </p><p> <li>         /// %summary><br>        /// Get the authority string given a tenant and environment<br>        /// %/summary><br>        /// %param name="environment">The Azure environment%/param><br>        /// %param name="tenant">The tenant Id%/param><br>        /// %returns>The authrotity string, from the AAD endpoint and tenant ID%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;tenantString&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 30 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;internal&nbsp;static&nbsp;&nbsp;PromptBehavior&nbsp;GetPromptBehavior(string&nbsp;showDialog)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 39 </li> </p><p> <li>         /// %summary><br>        /// <br>        /// %/summary><br>        /// %param name="showDialog">%/param><br>        /// %returns>%/returns><br></li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

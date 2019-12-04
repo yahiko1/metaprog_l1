@@ -8,12 +8,188 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:39.366480<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:31:05.900827<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\Monitor\Monitor\TransitionalClasses\TransitionHelpers.cs)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Management.Monitor.Models)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Linq)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.Commands.Insights.TransitionalClasses)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;static&nbsp;&nbsp;(class&nbsp;TransitionHelpers)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;return&nbsp;leafCondition&nbsp;&nbsp;(as&nbsp;ActivityLogAlertLeafCondition;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;emailAction&nbsp;=&nbsp;ruleAction&nbsp;&nbsp;(as&nbsp;Management.Monitor.Management.Models.RuleEmailAction;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;webhookAction&nbsp;=&nbsp;ruleAction&nbsp;&nbsp;(as&nbsp;Management.Monitor.Management.Models.RuleWebhookAction;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;ruleAction1&nbsp;=&nbsp;ruleAction&nbsp;&nbsp;(as&nbsp;RuleEmailAction;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;ruleAction2&nbsp;=&nbsp;ruleAction&nbsp;&nbsp;(as&nbsp;RuleWebhookAction;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;thresholdCondition&nbsp;=&nbsp;ruleCondition&nbsp;&nbsp;(as&nbsp;Management.Monitor.Management.Models.ThresholdRuleCondition;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;locationCondition&nbsp;=&nbsp;ruleCondition&nbsp;&nbsp;(as&nbsp;Management.Monitor.Management.Models.LocationThresholdRuleCondition;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;thresholdCondition&nbsp;=&nbsp;ruleCondition&nbsp;&nbsp;(as&nbsp;ThresholdRuleCondition;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;locationCondition&nbsp;=&nbsp;ruleCondition&nbsp;&nbsp;(as&nbsp;LocationThresholdRuleCondition;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;metricDataSource&nbsp;=&nbsp;ruleDataSource&nbsp;&nbsp;(as&nbsp;Management.Monitor.Management.Models.RuleMetricDataSource;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;var&nbsp;metricDataSource&nbsp;=&nbsp;ruleDataSource&nbsp;&nbsp;(as&nbsp;RuleMetricDataSource;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;schedule;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;trigger;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;action;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;notification;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;(return&nbsp;profile;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\Monitor\Monitor\TransitionalClasses\TransitionHelpers.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Management.Monitor.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 15 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.Insights.TransitionalClasses
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;static&nbsp;&nbsp;class&nbsp;TransitionHelpers
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 19 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ActivityLogAlertLeafCondition&nbsp;ToMirrorNamespace(Management.Monitor.Management.Models.ActivityLogAlertLeafCondition&nbsp;leafCondition)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 21 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;ActivityLogAlertLeafCondition&nbsp;ToMirrorNamespace(ActivityLogAlertLeafCondition&nbsp;leafCondition)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 26 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;RuleAction&nbsp;ToMirrorNamespace(Management.Monitor.Management.Models.RuleAction&nbsp;ruleAction)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 31 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;RuleAction&nbsp;ToMirrorNamespace(RuleAction&nbsp;ruleAction)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 54 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;RuleCondition&nbsp;ToMirrorNamespace(Management.Monitor.Management.Models.RuleCondition&nbsp;ruleCondition)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 73 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;RuleCondition&nbsp;ToMirrorNamespace(RuleCondition&nbsp;ruleCondition)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 100 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;RuleDataSource&nbsp;ToMirrorNamespace(Management.Monitor.Management.Models.RuleDataSource&nbsp;ruleDataSource)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 131 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;RuleDataSource&nbsp;ToMirrorNamespace(RuleDataSource&nbsp;ruleDataSource)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 154 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ConditionOperator&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ConditionOperator&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 224 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;ConditionOperator&nbsp;ConvertNamespace(ConditionOperator&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 230 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ComparisonOperationType&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ComparisonOperationType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 236 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;ComparisonOperationType&nbsp;ConvertNamespace(ComparisonOperationType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 242 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;MetricStatisticType&nbsp;ConvertNamespace(Management.Monitor.Management.Models.MetricStatisticType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 248 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;MetricStatisticType&nbsp;ConvertNamespace(MetricStatisticType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 254 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;TimeAggregationType&nbsp;ConvertNamespace(Management.Monitor.Management.Models.TimeAggregationType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 260 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;TimeAggregationType&nbsp;ConvertNamespace(TimeAggregationType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 266 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ScaleDirection&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ScaleDirection&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 272 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;ScaleDirection&nbsp;ConvertNamespace(ScaleDirection&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 278 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ScaleType&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ScaleType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 284 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;ScaleType&nbsp;ConvertNamespace(ScaleType&nbsp;operatorType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 290 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;RecurrentSchedule&nbsp;ConvertNamespace(Management.Monitor.Management.Models.RecurrentSchedule&nbsp;recurrentSchedule)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 296 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;MetricTrigger&nbsp;ConvertNamespace(Management.Monitor.Management.Models.MetricTrigger&nbsp;metricTrigger)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 311 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ScaleAction&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ScaleAction&nbsp;scaleAction)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 330 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ScaleRule&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ScaleRule&nbsp;scaleRule)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 345 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;ScaleCapacity&nbsp;ConvertNamespace(Management.Monitor.Management.Models.ScaleCapacity&nbsp;scaleCapacity)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 359 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;ScaleCapacity&nbsp;ConvertNamespace(ScaleCapacity&nbsp;scaleCapacity)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 369 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;TimeWindow&nbsp;ConvertNamespace(Management.Monitor.Management.Models.TimeWindow&nbsp;timeWindow)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 379 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;TimeWindow&nbsp;ConvertNamespace(TimeWindow&nbsp;timeWindow)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 389 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;Recurrence&nbsp;ConvertNamespace(Management.Monitor.Management.Models.Recurrence&nbsp;recurrence)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 399 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;Recurrence&nbsp;ConvertNamespace(Recurrence&nbsp;recurrence)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 409 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;RecurrenceFrequency&nbsp;ConvertNamespace(Management.Monitor.Management.Models.RecurrenceFrequency&nbsp;recurrenceFrequency)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 419 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;RecurrenceFrequency&nbsp;ConvertNamespace(RecurrenceFrequency&nbsp;recurrenceFrequency)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 425 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;AutoscaleSettingResource&nbsp;ConvertNamespace(AutoscaleSettingResource&nbsp;inputObject)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 431 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;AutoscaleNotification&nbsp;ConvertNamespace(AutoscaleNotification&nbsp;inputObject)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 436 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;&nbsp;AutoscaleNotification&nbsp;ConvertNamespace(Management.Monitor.Management.Models.AutoscaleNotification&nbsp;inputObject)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 441 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;public&nbsp;Management.Monitor.Management.Models&nbsp;&nbsp;AutoscaleProfile&nbsp;ConvertNamespace(AutoscaleProfile&nbsp;inputObject)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 454 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;static&nbsp;public&nbsp;&nbsp;AutoscaleProfile&nbsp;ConvertNamespace(Management.Monitor.Management.Models.AutoscaleProfile&nbsp;inputObject)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 459 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

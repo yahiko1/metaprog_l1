@@ -8,12 +8,167 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:34.678982<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:30:55.204428<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\ApiManagement\ApiManagement\Models\PsApiManagement.cs)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.Commands.ApiManagement.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Collections.Generic)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Linq)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Text.RegularExpressions)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Commands.ApiManagement.Properties)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Management.ApiManagement.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;(class&nbsp;PsApiManagement)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;portalHostnameResource&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;proxyHostnameResources&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;proxyCustomHostnameResources&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;managementHostnameResource&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;scmHostnameResource&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;systemCertificates&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string[]&nbsp;PublicIPAddresses&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string[]&nbsp;PrivateIPAddresses&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;Id&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;Name&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;Location&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;ProvisioningState&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;RuntimeUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;RuntimeRegionalUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;PortalUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;ManagementApiUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;ScmUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;IList<PsApiManagementRegion>&nbsp;AdditionalRegions&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;PsApiManagementSslSetting&nbsp;SslSetting&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;PsApiManagementServiceIdentity&nbsp;Identity&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;bool?&nbsp;EnableClientCertificate&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;match&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;resourceGroupNameGroup&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;resourceGroupNameGroup.Value;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;newRegion&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;newRegion;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;regionToRemove&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;(var&nbsp;regionToUpdate&nbsp;=&nbsp;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\ApiManagement\ApiManagement\Models\PsApiManagement.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.ApiManagement.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 18 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Text.RegularExpressions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 19 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.ApiManagement.Properties
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 20 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Management.ApiManagement.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 21 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;class&nbsp;PsApiManagement
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 23 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;public&nbsp;PsApiManagement()
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 28 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;portalHostnameResource&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 78 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;proxyHostnameResources&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 84 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;managementHostnameResource&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 96 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;scmHostnameResource&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 102 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string[]&nbsp;PublicIPAddresses&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 136 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string[]&nbsp;PrivateIPAddresses&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 138 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;Id&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 140 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;Name&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 142 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;Location&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 144 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;ProvisioningState&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 150 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;RuntimeUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 152 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;RuntimeRegionalUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 154 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;PortalUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 156 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;ManagementApiUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 158 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;ScmUrl&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 160 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;IList<PsApiManagementRegion>&nbsp;AdditionalRegions&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 186 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;PsApiManagementSslSetting&nbsp;SslSetting&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 188 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;PsApiManagementServiceIdentity&nbsp;Identity&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 190 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;bool?&nbsp;EnableClientCertificate&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 192 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;match&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 203 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;resourceGroupNameGroup&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 20, str_found: 206 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;bool&nbsp;RemoveRegion(string&nbsp;location)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 246 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;regionToRemove&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 260 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;void&nbsp;UpdateRegion(string&nbsp;location,&nbsp;PsApiManagementSku&nbsp;sku,&nbsp;int&nbsp;capacity,&nbsp;PsApiManagementVirtualNetwork&nbsp;virtualNetwork)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 265 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;regionToUpdate&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 272 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

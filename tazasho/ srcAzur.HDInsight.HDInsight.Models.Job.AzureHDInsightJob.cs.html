@@ -8,12 +8,86 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:37.950379<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:31:03.082607<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\HDInsight\HDInsight\Models\Job\AzureHDInsightJob.cs)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Management.HDInsight.Job.Models)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.Commands.HDInsight.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;(class&nbsp;AzureHDInsightJob)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;index&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;JobId&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;PercentComplete&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;int?&nbsp;ExitValue&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;string&nbsp;User&nbsp;{&nbsp;get;&nbsp;&nbsp;(private&nbsp;set;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\HDInsight\HDInsight\Models\Job\AzureHDInsightJob.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Management.HDInsight.Job.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.HDInsight.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;class&nbsp;AzureHDInsightJob
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 21 </li> </p><p> <li>     /// %summary><br>    /// Provides the details of an HDInsight jobDetails when creating the jobDetails.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;public&nbsp;AzureHDInsightJob(JobDetailRootJsonObject&nbsp;jobDetails,&nbsp;string&nbsp;cluster)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 28 </li> </p><p> <li>         /// %summary><br>        /// Initializes a new instance of the AzureHDInsightJob class.<br>        /// %/summary><br>        /// %param name="jobDetails">The HDInsight jobDetails.%/param><br>        /// %param name="cluster">The cluster that the jobDetails was created against.%/param><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;index&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 30 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;JobId&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 62 </li> </p><p> <li>         /// %summary><br>        /// Gets the JobId returned by the request.<br>        /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;PercentComplete&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 72 </li> </p><p> <li>         /// %summary><br>        /// Gets the percentage completion of the jobDetails.<br>        /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;int?&nbsp;ExitValue&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 77 </li> </p><p> <li>         /// %summary><br>        /// Gets the exit code for the jobDetails.<br>        /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;string&nbsp;User&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 82 </li> </p><p> <li>         /// %summary><br>        /// Gets the user name of the job creator.<br>        /// %/summary><br></li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

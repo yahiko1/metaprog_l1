@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>doc_builder</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
+        </head>
+        <body>
+                
+        <div class="container-fluid">
+            <h1>C#Doc</h1>
+            <div><p>Date of generation - 2019-12-04 18:22:44.267252<br>Version of generator - 2.1</p></div>
+        <div class="row">
+            <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\DataLakeStore\DataLakeStore\DataPlaneModels\DataLakeStoreItemAce.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.DataLakeStore.Properties
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Rest.Azure
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 15 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.DataLake.Store.Acl
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 18 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.DataLakeStore.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 20 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;class&nbsp;DataLakeStoreItemAce
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 26 </li> </p><p> <li>     /// %summary><br>    /// The object that is used to manage permissions for files and folders. This is an exposed model to public so it should be independent of SDK models. We will never be able to remove members. <br>    /// The sdk model AclEntry is mapped to this model.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;public&nbsp;DataLakeStoreItemAce(DataLakeStoreEnums.ScopeType&nbsp;scope,&nbsp;DataLakeStoreEnums.AceType&nbsp;type,&nbsp;string&nbsp;id,&nbsp;string&nbsp;permission)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 28 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;DataLakeStoreEnums&nbsp;&nbsp;AceType&nbsp;MapAclEntryType(AclType&nbsp;aclType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 40 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;&nbsp;AclType&nbsp;MapAceType(DataLakeStoreEnums.AceType&nbsp;aclType)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 51 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;internal&nbsp;DataLakeStoreItemAce(AclEntry&nbsp;entry)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 62 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;internal&nbsp;&nbsp;AclEntry&nbsp;ParseDataLakeStoreItemAce()
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 74 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;DataLakeStoreItemAce&nbsp;Parse(string&nbsp;aceString)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 89 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;aceList&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 91 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;scope&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 97 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;typeIndex&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 98 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;singleSpec&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 99 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;internal&nbsp;static&nbsp;&nbsp;string&nbsp;GetAclSpec(DataLakeStoreItemAce[]&nbsp;aces,&nbsp;bool&nbsp;includePermission&nbsp;=&nbsp;true)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 152 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

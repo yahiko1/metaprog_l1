@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>doc_builder</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
+        </head>
+        <body>
+                
+        <div class="container-fluid">
+            <h1>C#Doc</h1>
+            <div><p>Date of generation - 2019-12-04 18:22:51.725856<br>Version of generator - 2.1</p></div>
+        <div class="row">
+            <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\Peering\Peering\Models\PSBgpSession.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.PowerShell.Cmdlets.Peering.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 10 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Newtonsoft.Json
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 12 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 13 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;partial&nbsp;&nbsp;class&nbsp;PSBgpSession
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 18 </li> </p><p> <li>     /// %summary><br>    /// The properties that define a BGP session.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;public&nbsp;PSBgpSession()
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 23 </li> </p><p> <li>         /// %summary><br>        /// Initializes a new instance of the PSBgpSession class.<br>        /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;public&nbsp;PSBgpSession(string&nbsp;sessionPrefixV4&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;sessionPrefixV6&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;microsoftSessionIPv4Address&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;microsoftSessionIPv6Address&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;peerSessionIPv4Address&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;peerSessionIPv6Address&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;sessionStateV4&nbsp;=&nbsp;default(string),&nbsp;string&nbsp;sessionStateV6&nbsp;=&nbsp;default(string),&nbsp;int?&nbsp;maxPrefixesAdvertisedV4&nbsp;=&nbsp;default(int?),&nbsp;int?&nbsp;maxPrefixesAdvertisedV6&nbsp;=&nbsp;default(int?),&nbsp;string&nbsp;md5AuthenticationKey&nbsp;=&nbsp;default(string))
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 57 </li> </p><p> <li>         /// %summary><br>        /// Initializes a new instance of the PSBgpSession class.<br>        /// %/summary><br>        /// %param name="sessionPrefixV4">The IPv4 prefix that contains both<br>        /// ends' IPv4 addresses.%/param><br>        /// %param name="sessionPrefixV6">The IPv6 prefix that contains both<br>        /// ends' IPv6 addresses.%/param><br>        /// %param name="microsoftSessionIPv4Address">The IPv4 session address<br>        /// on Microsoft's end.%/param><br>        /// %param name="microsoftSessionIPv6Address">The IPv6 session address<br>        /// on Microsoft's end.%/param><br>        /// %param name="peerSessionIPv4Address">The IPv4 session address on<br>        /// peer's end.%/param><br>        /// %param name="peerSessionIPv6Address">The IPv6 session address on<br>        /// peer's end.%/param><br>        /// %param name="sessionStateV4">The state of the IPv4 session.<br>        /// Possible values include: 'None', 'Idle', 'Connect', 'Active',<br>        /// 'OpenSent', 'OpenConfirm', 'OpenReceived', 'Established',<br>        /// 'PendingAdd', 'PendingUpdate', 'PendingRemove'%/param><br>        /// %param name="sessionStateV6">The state of the IPv6 session.<br>        /// Possible values include: 'None', 'Idle', 'Connect', 'Active',<br>        /// 'OpenSent', 'OpenConfirm', 'OpenReceived', 'Established',<br>        /// 'PendingAdd', 'PendingUpdate', 'PendingRemove'%/param><br>        /// %param name="maxPrefixesAdvertisedV4">The maximum number of<br>        /// prefixes advertised over the IPv4 session.%/param><br>        /// %param name="maxPrefixesAdvertisedV6">The maximum number of<br>        /// prefixes advertised over the IPv6 session.%/param><br>        /// %param name="md5AuthenticationKey">The MD5 authentication key of<br>        /// the session.%/param><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;MicrosoftSessionIPv4Address&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 96 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;MicrosoftSessionIPv6Address&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 102 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;string&nbsp;SessionStateV4&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 123 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;string&nbsp;SessionStateV6&nbsp;{&nbsp;get;&nbsp;&nbsp;private&nbsp;set;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 132 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

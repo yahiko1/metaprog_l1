@@ -8,12 +8,841 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:34.694972<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:30:55.224416<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\ApiManagement\ApiManagement.ServiceManagement\ApiManagementClient.cs)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.Commands.ApiManagement.ServiceManagement)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Collections)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Collections.Generic)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Globalization)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.IO)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Linq)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Management.Automation)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Net)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Text.RegularExpressions)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;AutoMapper)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Common.Authentication)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Common.Authentication.Abstractions)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Management.ApiManagement)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Management.ApiManagement.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Newtonsoft.Json)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Newtonsoft.Json.Linq)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;WindowsAzure.Commands.Common)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;(class&nbsp;ApiManagementClient)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;readonly&nbsp;&nbsp;(IAzureContext&nbsp;_context;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;Management.ApiManagement&nbsp;&nbsp;(ApiManagementClient&nbsp;_client;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;static&nbsp;&nbsp;(IMapper&nbsp;_mapper;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;_mapper;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;config&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;resultsList&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;pagedResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;resultsList;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;mappedList&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;mappedList;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;api&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;getResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(ApiCreateOrUpdateParameter&nbsp;api;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;updatedApiContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(string&nbsp;contentValue;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;using&nbsp;&nbsp;&nbsp;(var&nbsp;fileStream&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;using&nbsp;&nbsp;&nbsp;(var&nbsp;streamReader&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiCreateOrUpdateParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;createOrUpdateContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;exportedFileContents&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;exportedFileContents;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;using&nbsp;&nbsp;&nbsp;(var&nbsp;stream&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;using&nbsp;&nbsp;&nbsp;(var&nbsp;memStream&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(string&nbsp;headerValue;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;headerValue;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;ExportFormat.Swagger;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;ExportFormat.Openapi;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;ExportFormat.Wadl;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;ExportFormat.Wsdl;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;case&nbsp;PsApiManagementApiType.Http:&nbsp;&nbsp;(return&nbsp;SoapApiType.SoapToRest;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;case&nbsp;PsApiManagementApiType.Soap:&nbsp;&nbsp;(return&nbsp;SoapApiType.SoapPassThrough;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;default:&nbsp;&nbsp;(return&nbsp;SoapApiType.SoapPassThrough;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;api&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(ApiCreateOrUpdateParameter&nbsp;apiCreateParams;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;getResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiReleaseCreateContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiRelease&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiReleaseContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiRelease&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;apiRelease;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;contentType&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiSchemaCreateContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;getResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(SchemaCreateOrUpdateContract&nbsp;apiSchemaCreateOrUpdate;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiSchemaContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;contentType&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;getResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiVersionCreateContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;versionSet&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(ApiVersionSetContract&nbsp;apiVersionContract;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;updatedApiVersionSet&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;getApiVersionSet&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;apiVersionSet&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;apiVersionSet;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationContractResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationContractResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;query&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;product&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;product;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;productContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;productUpdateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;query&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;query&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;subscription&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;subscription;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(SubscriptionCreateParameters&nbsp;createParameters;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(SubscriptionUpdateParameters&nbsp;updateParameters;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;userCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;user&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;user;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;userUpdateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;currentUser&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;query&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;user&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;user;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;response.Value;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;userKeyType&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;parameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;token&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;token;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;isFirstCondition&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;query&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;query;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;groupCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;group&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;group;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;query&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(IList<PsApiManagementGroup>&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;group&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;group;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;groupUpdate&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;response.Value;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;policyContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;policyContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;policyContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;policyContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;certificate&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;certificate;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;createParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;certificate&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;certificate;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;createParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;certificate&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;certificate;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;server&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;server;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;serverContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;server&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;server;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;serverUpdateContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;result&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;result;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;result&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(PsApiManagementAuthorizationRequestMethod&nbsp;method;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;loggerCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;loggerContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;logger&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;logger;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;logger&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;logger;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;loggerUpdateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;propertyCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;propertyResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;property&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;property;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;property&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;property;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;propertyToUpdate&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;openIdProviderCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;openIdConnectProvider&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;openIdConnectProvider;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;openIdConnectProvider&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;openIdConnectProvider;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;openIdConnectProviderUpdateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;saveConfigurationParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationResultContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;deployConfigurationParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationResultContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;deployConfigurationParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;operationResultContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;accessInformationParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;identityProviderCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;identityProvider&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;identityProvider;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;identityProviderListResponse&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;identityProvider&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;identityProvider;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;parameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;backendCreateParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;backend&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;backend;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;backend&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;backend;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;backendUpdateParams&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;cacheCreateParameters&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;cache&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;cache;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;cacheContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;cacheContract;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(CacheUpdateParameters&nbsp;parameters;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;diagnosticContract&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(DiagnosticContract&nbsp;diagnosticResult;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;diagnostic&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;diagnostic;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;results&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;results;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(DiagnosticContract&nbsp;diagnosticContract;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;psDiagnostic&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;psDiagnostic;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(DiagnosticContract&nbsp;diagnosticContract;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;response&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;psDiagnostic&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;psDiagnostic;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;diagnostic&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;result&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;result;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;diagnostic&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;result&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;result;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;parameterList&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;parameterList;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(var&nbsp;parameterList&nbsp;=&nbsp;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;(var&nbsp;parameterList&nbsp;=&nbsp;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\ApiManagement\ApiManagement.ServiceManagement\ApiManagementClient.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.ApiManagement.ServiceManagement
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 18 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Globalization
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 19 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.IO
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 20 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 21 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Management.Automation
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 22 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Net
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 23 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Text.RegularExpressions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 24 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;AutoMapper
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 25 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Common.Authentication
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 26 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Common.Authentication.Abstractions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 27 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Management.ApiManagement
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 28 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Management.ApiManagement.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 29 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 30 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Newtonsoft.Json
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 31 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Newtonsoft.Json.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 32 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;WindowsAzure.Commands.Common
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 33 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;class&nbsp;ApiManagementClient
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 35 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;readonly&nbsp;&nbsp;IAzureContext&nbsp;_context;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 44 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;Management.ApiManagement&nbsp;&nbsp;ApiManagementClient&nbsp;_client;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 45 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;static&nbsp;&nbsp;IMapper&nbsp;_mapper;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 49 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;static&nbsp;ApiManagementClient()
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 69 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;static&nbsp;&nbsp;void&nbsp;ConfigureMappings()
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 74 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;public&nbsp;ApiManagementClient(IAzureContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 581 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;Management.ApiManagement&nbsp;&nbsp;ApiManagementClient&nbsp;CreateClient()
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 598 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;pagedResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 611 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;mappedList&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 629 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;ApiManagementServiceResource&nbsp;GetService(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 635 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApi>&nbsp;ApiList(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 645 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 647 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApi>&nbsp;ApiByName(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;name)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 654 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 656 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApi>&nbsp;ApiByProductId(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 669 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 671 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementApi&nbsp;ApiById(string&nbsp;resourcegroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;id)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 678 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 680 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;getResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 775 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 781 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiRemoveRevision(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 786 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;ApiCreateOrUpdateParameter&nbsp;api;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 809 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;apiContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 812 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;updatedApiContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 892 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;string&nbsp;contentValue;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 920 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;using&nbsp;&nbsp;&nbsp;var&nbsp;fileStream&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 921 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1042 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;exportedFileContents&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1043 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;using&nbsp;&nbsp;&nbsp;var&nbsp;stream&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1052 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;string&nbsp;headerValue;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1069 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiAddToProduct(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1140 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiRemoveFromProduct(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1145 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApiRevision>&nbsp;ApiRevisionsList(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1152 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1154 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementApi&nbsp;GetApiRevision(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;revisionId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1161 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;api&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1174 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;ApiCreateOrUpdateParameter&nbsp;apiCreateParams;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1175 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;getResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1197 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;apiRelease&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1222 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;apiReleaseContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1240 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementApiRelease&nbsp;GetApiReleaseById(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;releaseId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1260 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1262 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;apiRelease&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1263 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApiRelease>&nbsp;GetApiReleases(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1268 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1270 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiReleaseRemove(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;releaseId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1277 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApiSchema>&nbsp;ApiSchemaList(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1285 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1287 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementApiSchema&nbsp;ApiSchemaById(string&nbsp;resourcegroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;schemaId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1294 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1296 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;contentType&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1309 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;getResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1316 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;SchemaCreateOrUpdateContract&nbsp;apiSchemaCreateOrUpdate;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1335 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;apiSchemaContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 1338 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;contentType&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1353 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;getResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1364 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiSchemaRemove(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;schemaId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1375 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;versionSet&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1411 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;ApiVersionSetContract&nbsp;apiVersionContract;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1427 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;updatedApiVersionSet&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1477 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementApiVersionSet&nbsp;GetApiVersionSet(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiVersionSetId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1487 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;getApiVersionSet&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1489 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;apiVersionSet&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1490 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementApiVersionSet>&nbsp;GetApiVersionSets(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1494 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1496 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ApiVersionSetRemove(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;apiVersionSetId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1503 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementOperation>&nbsp;OperationList(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1511 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1513 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementOperation&nbsp;OperationById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;operationId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1520 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;operationContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1522 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;operationContractResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1562 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;operationContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1578 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;operationContractResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1580 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;OperationRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;operationId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1634 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementProduct>&nbsp;ProductList&nbsp;(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;title)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1641 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1649 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementProduct>&nbsp;ProductListByApi(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1656 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1658 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementProduct&nbsp;ProductById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1665 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1667 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;product&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1668 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ProductRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId,&nbsp;bool&nbsp;deleteSubscriptions)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1673 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1714 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ProductAddToGroup(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;groupId,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1758 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;ProductRemoveFromGroup(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;groupId,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1763 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementSubscription>&nbsp;SubscriptionList(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1770 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1772 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementSubscription>&nbsp;SubscriptionByUser(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;userId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1779 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1781 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementSubscription>&nbsp;SubscriptionByScope(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;scope)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1788 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1793 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementSubscription>&nbsp;SubscriptionByProductAndUser(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId,&nbsp;string&nbsp;userId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1800 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1805 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementSubscription>&nbsp;SubscriptionByProduct(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1812 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 1814 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1826 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;subscription&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1830 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;SubscriptionCreateParameters&nbsp;createParameters;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1847 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1887 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;SubscriptionUpdateParameters&nbsp;updateParameters;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1910 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;SubscriptionRemove(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;subscriptionId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 1963 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1996 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;user&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 1997 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;currentUser&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 2029 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;query&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2044 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2046 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementUser&nbsp;UserById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;userId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2057 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2059 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;user&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2061 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;UserRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;userId,&nbsp;bool&nbsp;deleteSubscriptions)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2065 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;string&nbsp;UserGetSsoUrl(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;userId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2070 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2072 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementUserToken&nbsp;UserGetToken(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;userId,&nbsp;PsApiManagementUserKeyType&nbsp;keyType,&nbsp;DateTime&nbsp;expiry)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2077 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;userKeyType&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2079 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2081 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;UserAddToGroup(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;groupId,&nbsp;string&nbsp;userId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2098 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;UserRemoveFromGroup(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;groupId,&nbsp;string&nbsp;userId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2103 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;static&nbsp;Rest.Azure.OData&nbsp;&nbsp;ODataQuery<UserContract>&nbsp;CreateQueryUserParameters(string&nbsp;firstName,&nbsp;string&nbsp;lastName,&nbsp;string&nbsp;email,&nbsp;PsApiManagementUserState?&nbsp;state)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2108 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;isFirstCondition&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2110 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2180 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;group&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2181 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementGroup>&nbsp;GroupsList(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;name,&nbsp;string&nbsp;userId,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2186 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;IList<PsApiManagementGroup>&nbsp;results;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2194 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementGroup&nbsp;GroupById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;groupId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2217 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2219 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;group&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2220 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;GroupRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;groupId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2225 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;static&nbsp;&nbsp;string&nbsp;PolicyGetWrap(Func<PolicyContract>&nbsp;getPolicyFunc)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2253 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 2257 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;string&nbsp;PolicyGetTenantLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;format)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2272 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;string&nbsp;PolicyGetProductLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId,&nbsp;string&nbsp;format)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2277 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;string&nbsp;PolicyGetApiLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;format)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2282 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;string&nbsp;PolicyGetOperationLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;operationId,&nbsp;string&nbsp;format)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2287 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicySetTenantLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;policyContent,&nbsp;string&nbsp;contentFormat)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2292 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicySetProductLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;policyContent,&nbsp;string&nbsp;productId,&nbsp;string&nbsp;contentFormat)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2301 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicySetApiLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;policyContent,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;contentFormat)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2310 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicySetOperationLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;policyContent,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;operationId,&nbsp;string&nbsp;contentFormat)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2319 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicyRemoveTenantLevel(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2328 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicyRemoveProductLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;productId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2333 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicyRemoveApiLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2338 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PolicyRemoveOperationLevel(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;apiId,&nbsp;string&nbsp;operationId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2343 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementCertificate>&nbsp;CertificateList(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2350 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2352 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementCertificate&nbsp;CertificateById(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;certificateId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2359 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2361 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;certificate&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2363 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2382 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;certificate&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2383 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2402 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;certificate&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2403 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;CertificateRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;certificateId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2408 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;IList<PsApiManagementOAuth&nbsp;&nbsp;AuthorizationServer>&nbsp;AuthorizationServerList(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2416 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2418 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2428 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;server&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2430 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2487 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;server&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2493 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;AuthorizationServerRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;serverId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2559 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;private&nbsp;static&nbsp;IList<AuthorizationMethod&nbsp;&nbsp;>&nbsp;GetAuthorizationMethods(PsApiManagementAuthorizationRequestMethod[]&nbsp;authorizationRequestMethods)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2568 </li> </p><p> <li>         /// %summary><br>        /// We have to define explicit mapping here, as the enums in the powershell mismatch the enum in the .NET client<br>        /// and hence direct mapping is not working.<br>        /// %/summary>        <br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;PsApiManagementAuthorizationRequestMethod&nbsp;method;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 16, str_found: 2620 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;loggerContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2672 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;logger&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2674 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementLogger>&nbsp;LoggersList(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2679 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2681 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementLogger&nbsp;LoggerById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;loggerId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2688 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2690 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;logger&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2691 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;LoggerRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;loggerId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2696 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;propertyResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2755 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;property&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2761 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementProperty>&nbsp;PropertiesList(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2766 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2768 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementProperty>&nbsp;PropertyByName(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;propertyName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2775 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2777 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementProperty>&nbsp;PropertyByTag(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;propertyTag)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2790 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2792 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementProperty&nbsp;PropertyById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;propertyId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2805 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2807 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;property&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2808 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;PropertyRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;propertyId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2813 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;propertyToUpdate&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2826 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2885 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;openIdConnectProvider&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 2886 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementOpenIdConnectProvider>&nbsp;OpenIdConnectProvidersList(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2891 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2893 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementOpenIdConnectProvider>&nbsp;OpenIdConnectProviderByName(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;openIdConnectProviderName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2900 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2902 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementOpenIdConnectProvider&nbsp;OpenIdConnectProviderById(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;openIdConnectProviderId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2915 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2917 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;openIdConnectProvider&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2922 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;OpenIdConnectProviderRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;openIdConnectProviderId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2927 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementAccessInformation&nbsp;GetTenantGitAccessInformation(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 2978 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 2980 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;operationResultContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3000 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;operationResultContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3018 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;operationResultContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3036 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3047 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementAccessInformation&nbsp;GetTenantAccessInformation(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3057 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3059 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3122 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;identityProvider&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3127 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementIdentityProvider>&nbsp;IdentityProviderList(PsApiManagementContext&nbsp;context)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3132 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;identityProviderListResponse&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3134 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3138 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementIdentityProvider&nbsp;IdentityProviderByName(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;identityProviderName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3143 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3145 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;identityProvider&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3149 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;IdentityProviderRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;identityProviderName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3154 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3310 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;backend&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3311 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementBackend>&nbsp;BackendsList(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3316 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3318 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;PsApiManagementBackend&nbsp;BackendById(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;backendId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3325 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3327 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;backend&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3328 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;BackendRemove(PsApiManagementContext&nbsp;context,&nbsp;string&nbsp;backendId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3333 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3458 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;cache&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3463 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;IList<PsApiManagementCache>&nbsp;CacheList(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3468 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 3470 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3482 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;cacheContract&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3486 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;void&nbsp;CacheRemove(string&nbsp;resourceGroupName,&nbsp;string&nbsp;serviceName,&nbsp;string&nbsp;cacheId)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3491 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;CacheUpdateParameters&nbsp;parameters;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3505 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;DiagnosticContract&nbsp;diagnosticResult;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3572 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;diagnostic&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3591 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3600 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;results&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3612 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;DiagnosticContract&nbsp;diagnosticContract;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3630 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3668 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;psDiagnostic&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3675 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;DiagnosticContract&nbsp;diagnosticContract;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3691 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;response&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3730 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;psDiagnostic&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3738 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;diagnostic&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3747 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;result&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3752 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;diagnostic&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3762 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;result&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 12, str_found: 3768 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;static&nbsp;&nbsp;IList<ParameterContract>&nbsp;ToParameterContract(PsApiManagementParameter[]&nbsp;parameters)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 3800 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

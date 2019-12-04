@@ -8,12 +8,80 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:34.501085<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:30:54.914376<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\Advisor\Advisor\Cmdlets\Models\PsAzureAdvisorConfigurationData.cs)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.Commands.Advisor.Cmdlets.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Collections.Generic)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Management.Advisor.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;(class&nbsp;PsAzureAdvisorConfigurationData)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;(return&nbsp;returnList;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\Advisor\Advisor\Cmdlets\Models\PsAzureAdvisorConfigurationData.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.Advisor.Cmdlets.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Management.Advisor.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 4, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;class&nbsp;PsAzureAdvisorConfigurationData
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 22 </li> </p><p> <li>     /// %summary><br>    /// PS object for Advisor SDK ConfigurationData<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;internal&nbsp;static&nbsp;&nbsp;PsAzureAdvisorConfigurationData&nbsp;GetFromConfigurationData(ConfigData&nbsp;configData)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 49 </li> </p><p> <li>         /// %summary><br>        /// Parse the configData into PsObject<br>        /// %/summary><br>        /// %param name="configData">ConfigData to be converted%/param><br>        /// %returns>PsAzureAdvisorConfigurationData generated%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;internal&nbsp;static&nbsp;&nbsp;List<PsAzureAdvisorConfigurationData>&nbsp;GetFromConfigurationData(IEnumerable<ConfigData>&nbsp;configDataList)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 70 </li> </p><p> <li>         /// %summary><br>        /// Parse a list of configData to a list of equivalent PSObject.<br>        /// %/summary><br>        /// %param name="configDataList">List of ConfigData to be converted.%/param><br>        /// %returns>List of PsAzureAdvisorConfigurationData generated.%/returns><br></li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

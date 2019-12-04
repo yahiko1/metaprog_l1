@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:35.697394<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.GetAzureVMExtensionCommand.cs.html " style="width:auto; font-size:40px">GetAzureVMExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.NetcoreExtension.cs.html " style="width:auto; font-size:40px">NetcoreExtension.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.RemoveAzureVMExtensionCommand.cs.html " style="width:auto; font-size:40px">RemoveAzureVMExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.SetAzureVMExtensionBaseCmdlet.cs.html " style="width:auto; font-size:40px">SetAzureVMExtensionBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.SetAzureVMExtensionCommand.cs.html " style="width:auto; font-size:40px">SetAzureVMExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VirtualMachineExtensionBaseCmdlet.cs.html " style="width:auto; font-size:40px">VirtualMachineExtensionBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VirtualMachineScaleSetExtensionBaseCmdlet.cs.html " style="width:auto; font-size:40px">VirtualMachineScaleSetExtensionBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.ADDomain.html " style="width:auto; font-size:40px">ADDomain</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.AEM.html " style="width:auto; font-size:40px">AEM</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.AzureDiskEncryption.html " style="width:auto; font-size:40px">AzureDiskEncryption</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.AzureVMBackup.html " style="width:auto; font-size:40px">AzureVMBackup</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.BGInfo.html " style="width:auto; font-size:40px">BGInfo</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.Chef.html " style="width:auto; font-size:40px">Chef</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.CustomScript.html " style="width:auto; font-size:40px">CustomScript</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.Diagnostics.html " style="width:auto; font-size:40px">Diagnostics</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.html " style="width:auto; font-size:40px">DSC</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.SqlServer.html " style="width:auto; font-size:40px">SqlServer</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VMAccess.html " style="width:auto; font-size:40px">VMAccess</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VmssDiskEncryption.html " style="width:auto; font-size:40px">VmssDiskEncryption</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:30:56.972998<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.GetAzureVMExtensionCommand.cs.html " style="width:auto; font-size:40px">GetAzureVMExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.NetcoreExtension.cs.html " style="width:auto; font-size:40px">NetcoreExtension.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.RemoveAzureVMExtensionCommand.cs.html " style="width:auto; font-size:40px">RemoveAzureVMExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.SetAzureVMExtensionBaseCmdlet.cs.html " style="width:auto; font-size:40px">SetAzureVMExtensionBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.SetAzureVMExtensionCommand.cs.html " style="width:auto; font-size:40px">SetAzureVMExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VirtualMachineExtensionBaseCmdlet.cs.html " style="width:auto; font-size:40px">VirtualMachineExtensionBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VirtualMachineScaleSetExtensionBaseCmdlet.cs.html " style="width:auto; font-size:40px">VirtualMachineScaleSetExtensionBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.ADDomain.html " style="width:auto; font-size:40px">ADDomain</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.AEM.html " style="width:auto; font-size:40px">AEM</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.AzureDiskEncryption.html " style="width:auto; font-size:40px">AzureDiskEncryption</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.AzureVMBackup.html " style="width:auto; font-size:40px">AzureVMBackup</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.BGInfo.html " style="width:auto; font-size:40px">BGInfo</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.Chef.html " style="width:auto; font-size:40px">Chef</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.CustomScript.html " style="width:auto; font-size:40px">CustomScript</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.Diagnostics.html " style="width:auto; font-size:40px">Diagnostics</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.html " style="width:auto; font-size:40px">DSC</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.SqlServer.html " style="width:auto; font-size:40px">SqlServer</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VMAccess.html " style="width:auto; font-size:40px">VMAccess</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.VmssDiskEncryption.html " style="width:auto; font-size:40px">VmssDiskEncryption</a></p></div> </p>

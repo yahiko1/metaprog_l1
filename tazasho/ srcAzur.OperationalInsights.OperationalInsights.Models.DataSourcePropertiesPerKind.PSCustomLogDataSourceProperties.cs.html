@@ -8,12 +8,123 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-11-30 12:36:40.853870<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:31:08.009380<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;(srcAzur\OperationalInsights\OperationalInsights\Models\DataSourcePropertiesPerKind\PSCustomLogDataSourceProperties.cs)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.Azure.Commands.OperationalInsights.Properties)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Newtonsoft.Json)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Collections.Generic)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Linq)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Text)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;System.Threading.Tasks)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Microsoft.WindowsAzure.Commands.Common.CustomAttributes)</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;(using&nbsp;Newtonsoft.Json.Linq)</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;(namespace&nbsp;Microsoft.Azure.Commands.OperationalInsights.Models)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;PSCustomLogDataSourceProperties)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;override&nbsp;string&nbsp;Kind&nbsp;{&nbsp;get&nbsp;{&nbsp;&nbsp;(return&nbsp;PSDataSourceKinds.CustomLog;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;Location)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;FileSystemLocations)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;RecordDelimiter)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;RegexDelimiter)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;CustomLogInput)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;DateTimeExtraction)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;ExtractionProperties)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;(class&nbsp;CustomLogExtraction)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;(class&nbsp;RegexDelimiterJsonConverter)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;(return&nbsp;null;)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;override&nbsp;bool&nbsp;CanWrite&nbsp;&nbsp;&nbsp;(>&nbsp;false;)</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\OperationalInsights\OperationalInsights\Models\DataSourcePropertiesPerKind\PSCustomLogDataSourceProperties.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.OperationalInsights.Properties
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Newtonsoft.Json
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 15 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 18 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Text
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 19 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Threading.Tasks
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 20 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.WindowsAzure.Commands.Common.CustomAttributes
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 21 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Newtonsoft.Json.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 22 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.OperationalInsights.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 24 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;PSCustomLogDataSourceProperties
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 27 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;Location
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 60 </li> </p><p> <li>     /// %summary><br>    /// The location.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;FileSystemLocations
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 76 </li> </p><p> <li>     /// %summary><br>    /// The file system locations.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;RecordDelimiter
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 98 </li> </p><p> <li>     /// %summary><br>    /// The record delimiter.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;RegexDelimiter
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 114 </li> </p><p> <li>     /// %summary><br>    /// The regex delimiter.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;CustomLogInput
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 142 </li> </p><p> <li>     /// %summary><br>    /// The custom log input.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;DateTimeExtraction
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 164 </li> </p><p> <li>     /// %summary><br>    /// The date time extraction.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;ExtractionProperties
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 200 </li> </p><p> <li>     /// %summary><br>    /// The extraction properties.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;&nbsp;class&nbsp;CustomLogExtraction
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 216 </li> </p><p> <li>     /// %summary><br>    /// The custom log extraction.<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;&nbsp;class&nbsp;RegexDelimiterJsonConverter
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 242 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;override&nbsp;&nbsp;object&nbsp;ReadJson(JsonReader&nbsp;reader,&nbsp;Type&nbsp;objectType,&nbsp;object&nbsp;existingValue,&nbsp;JsonSerializer&nbsp;serializer)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 244 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;override&nbsp;bool&nbsp;CanWrite&nbsp;&nbsp;&nbsp;>&nbsp;false;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: True, position: 8, str_found: 261 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

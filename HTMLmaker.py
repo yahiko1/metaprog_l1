@@ -23,22 +23,52 @@ def html_template(file):
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 ''')
 
 
 def html_cs_template(file, html_name):
-    answer = ""
-    for pre, fill, node in RenderTree(file):
-        treestr = u"%s%s  %s" % (pre, node.prop, node.sign)
-        answer += treestr
-        answer += '\n'
-        if len(node.doc_comment) == 0 and node.is_root is False:
-            answer += 'Documentation have not created'
-            answer += '\n'
-        else:
-            answer += node.doc_comment.replace('<', '%')
+
     f = open(html_name, "w", encoding='utf-8')
     html_template(f)
     f.write('''
@@ -50,11 +80,39 @@ def html_cs_template(file, html_name):
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
                 ''')
-    lines = answer.splitlines()
-    for line in lines:
-        f.write('<p>' + line.replace(' ', '&nbsp;') + '</p>')
-    # f.write(answer.replace('\n', '<br>'))
-    f.write('</div> </div>  </body>')
+    f.write('<p>' + '<a href=" ' + "index.html"
+            + ' " style="width:auto; font-size:10px">' + 'Index' + '</a>' + '</p>')
+
+    f.write('<ul id="myUL">')
+    for pre, fill, node in RenderTree(file):
+        treestr = u"%s%s  %s" % (pre, node.prop, node.sign)
+        treestr += '\n'
+        f.write('<p> <li><span class="caret"> ' + treestr.replace(' ', '&nbsp;') + ''' </span> </p> 
+        <ul class="nested">''')
+
+        f.write('<p> <li> ' + "mod: " + str(node.mod) + ", scope: " + str(node.scope) + ", position: " + str(node.position)
+                + ", str_found: " + str(node.str_found) + ' </li> </p>')
+        if len(node.doc_comment) == 0 and node.is_root is False:
+            f.write('<p> <li> ' + "No documentation have added yet\n" + ' </li> </p>')
+        else:
+            dc = node.doc_comment.replace('<', '%')
+            f.write('<p> <li> ' + dc.replace('\n', '<br>') + '</li> </p>')
+
+        f.write(' </ul> </li> ')
+
+    f.write('''</div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>''')
     f.close()
 
 
@@ -133,6 +191,8 @@ def create_target_html(res_dir, node):
                             <h1>C#Doc</h1>
                             <div><p>''')
         f.write('Date of generation - ' + str(datetime.utcnow()) + '<br>Version of generator - 2.1')
+        f.write('<p>' + '<a href=" ' + "index.html"
+                + ' " style="width:auto; font-size:10px">' + 'Index' + '</a>' + '</p>')
         f.write('</div> </p> <div> <p>')
         for ch in child:
             w = ch.way.replace('\\', '.')
@@ -173,4 +233,5 @@ def create_alphabetic_target(res_dir, alpha, alpha_up, all_token_list):
     f.write('</div> </p> <div>')
     for token in all_token_list:
         if token.sign.startswith(alpha) or token.sign.startswith(alpha_up):
-            f.write('<p>' + token.sign + ' (' + str(token.mod) + ') ' + '<p>')
+            f.write('<p>' + token.sign + ' (' + str(token.mod) + ') ' + '<a href="' + res_dir + r'\ ' + token.file_name.replace('\\', '.') + '.html'
+                    + '" style="width:auto; font-size:15px">' + token.file_name + '</a>' + '<p>')

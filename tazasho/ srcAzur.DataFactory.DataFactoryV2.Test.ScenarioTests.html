@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:36.510939<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFactoriesScenarioTestsBase.cs.html " style="width:auto; font-size:40px">DataFactoriesScenarioTestsBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFactoryTests.cs.html " style="width:auto; font-size:40px">DataFactoryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFlowDebugSessionTests.cs.html " style="width:auto; font-size:40px">DataFlowDebugSessionTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFlowTests.cs.html " style="width:auto; font-size:40px">DataFlowTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DatasetTests.cs.html " style="width:auto; font-size:40px">DatasetTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.IntegrationRuntimeTests.cs.html " style="width:auto; font-size:40px">IntegrationRuntimeTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.LinkedServiceTests.cs.html " style="width:auto; font-size:40px">LinkedServiceTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.PipelineTests.cs.html " style="width:auto; font-size:40px">PipelineTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.RunTests.cs.html " style="width:auto; font-size:40px">RunTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.TriggerTests.cs.html " style="width:auto; font-size:40px">TriggerTests.cs</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:31:01.967352<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFactoriesScenarioTestsBase.cs.html " style="width:auto; font-size:40px">DataFactoriesScenarioTestsBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFactoryTests.cs.html " style="width:auto; font-size:40px">DataFactoryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFlowDebugSessionTests.cs.html " style="width:auto; font-size:40px">DataFlowDebugSessionTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DataFlowTests.cs.html " style="width:auto; font-size:40px">DataFlowTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.DatasetTests.cs.html " style="width:auto; font-size:40px">DatasetTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.IntegrationRuntimeTests.cs.html " style="width:auto; font-size:40px">IntegrationRuntimeTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.LinkedServiceTests.cs.html " style="width:auto; font-size:40px">LinkedServiceTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.PipelineTests.cs.html " style="width:auto; font-size:40px">PipelineTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.RunTests.cs.html " style="width:auto; font-size:40px">RunTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataFactory.DataFactoryV2.Test.ScenarioTests.TriggerTests.cs.html " style="width:auto; font-size:40px">TriggerTests.cs</a></p></div> </p>

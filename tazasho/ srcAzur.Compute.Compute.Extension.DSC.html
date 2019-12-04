@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:35.753362<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.ConfigurationParseResult.cs.html " style="width:auto; font-size:40px">ConfigurationParseResult.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.ConfigurationParsingHelper.cs.html " style="width:auto; font-size:40px">ConfigurationParsingHelper.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionCmdletCommonBase.cs.html " style="width:auto; font-size:40px">DscExtensionCmdletCommonBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionCmdletConstants.cs.html " style="width:auto; font-size:40px">DscExtensionCmdletConstants.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionPrivateSettings.cs.html " style="width:auto; font-size:40px">DscExtensionPrivateSettings.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionPublicSettings.cs.html " style="width:auto; font-size:40px">DscExtensionPublicSettings.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionPublishCmdletCommonBase.cs.html " style="width:auto; font-size:40px">DscExtensionPublishCmdletCommonBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionSettingsSerializer.cs.html " style="width:auto; font-size:40px">DscExtensionSettingsSerializer.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.GetAzureVMDscExtensionCommand.cs.html " style="width:auto; font-size:40px">GetAzureVMDscExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.GetAzureVMDscExtensionStatusCommand.cs.html " style="width:auto; font-size:40px">GetAzureVMDscExtensionStatusCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.GetDscResourceException.cs.html " style="width:auto; font-size:40px">GetDscResourceException.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.PublishAzureVMDscConfigurationCommand.cs.html " style="width:auto; font-size:40px">PublishAzureVMDscConfigurationCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.RemoveAzureVMDscExtensionCommand.cs.html " style="width:auto; font-size:40px">RemoveAzureVMDscExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.SetAzureVMDscExtensionCommand.cs.html " style="width:auto; font-size:40px">SetAzureVMDscExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.VirtualMachineDscExtensionContext.cs.html " style="width:auto; font-size:40px">VirtualMachineDscExtensionContext.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.VirtualMachineDscExtensionStatusContext.cs.html " style="width:auto; font-size:40px">VirtualMachineDscExtensionStatusContext.cs</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:30:57.080830<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.ConfigurationParseResult.cs.html " style="width:auto; font-size:40px">ConfigurationParseResult.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.ConfigurationParsingHelper.cs.html " style="width:auto; font-size:40px">ConfigurationParsingHelper.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionCmdletCommonBase.cs.html " style="width:auto; font-size:40px">DscExtensionCmdletCommonBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionCmdletConstants.cs.html " style="width:auto; font-size:40px">DscExtensionCmdletConstants.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionPrivateSettings.cs.html " style="width:auto; font-size:40px">DscExtensionPrivateSettings.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionPublicSettings.cs.html " style="width:auto; font-size:40px">DscExtensionPublicSettings.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionPublishCmdletCommonBase.cs.html " style="width:auto; font-size:40px">DscExtensionPublishCmdletCommonBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.DscExtensionSettingsSerializer.cs.html " style="width:auto; font-size:40px">DscExtensionSettingsSerializer.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.GetAzureVMDscExtensionCommand.cs.html " style="width:auto; font-size:40px">GetAzureVMDscExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.GetAzureVMDscExtensionStatusCommand.cs.html " style="width:auto; font-size:40px">GetAzureVMDscExtensionStatusCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.GetDscResourceException.cs.html " style="width:auto; font-size:40px">GetDscResourceException.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.PublishAzureVMDscConfigurationCommand.cs.html " style="width:auto; font-size:40px">PublishAzureVMDscConfigurationCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.RemoveAzureVMDscExtensionCommand.cs.html " style="width:auto; font-size:40px">RemoveAzureVMDscExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.SetAzureVMDscExtensionCommand.cs.html " style="width:auto; font-size:40px">SetAzureVMDscExtensionCommand.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.VirtualMachineDscExtensionContext.cs.html " style="width:auto; font-size:40px">VirtualMachineDscExtensionContext.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Compute.Compute.Extension.DSC.VirtualMachineDscExtensionStatusContext.cs.html " style="width:auto; font-size:40px">VirtualMachineDscExtensionStatusContext.cs</a></p></div> </p>

@@ -84,7 +84,7 @@ def is_doc_comment(line=str()):
     return False
 
 
-def fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, row):
+def fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, row, file_name):
     prop = line[0:p.start() - 1]
     for ch in prop:
         if ch != ' ':
@@ -115,7 +115,7 @@ def fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment
         if ch != ' ':
             position = line.index(ch)
             break
-    return StructHolder(None, None, prop, sign, str_found, position, new_path, comment_buff, scope, False, mod, doc_comment_buff, row)
+    return StructHolder(None, None, prop, sign, str_found, position, new_path, comment_buff, scope, False, mod, doc_comment_buff, row, file_name)
 
 
 def fill_catalog_hierarchy(way, w):

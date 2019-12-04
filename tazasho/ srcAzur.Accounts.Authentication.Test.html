@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:34.449116<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.AuthenticationFactoryTests.cs.html " style="width:auto; font-size:40px">AuthenticationFactoryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.AzureSessionTests.cs.html " style="width:auto; font-size:40px">AzureSessionTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ClientFactoryHandlerTests.cs.html " style="width:auto; font-size:40px">ClientFactoryHandlerTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ClientFactoryTests.cs.html " style="width:auto; font-size:40px">ClientFactoryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.CommonDataCmdletTests.cs.html " style="width:auto; font-size:40px">CommonDataCmdletTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ContextModelTests.cs.html " style="width:auto; font-size:40px">ContextModelTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ConversionUtilitiesTests.cs.html " style="width:auto; font-size:40px">ConversionUtilitiesTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.LoginTests.cs.html " style="width:auto; font-size:40px">LoginTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.LongRunningCmdletTests.cs.html " style="width:auto; font-size:40px">LongRunningCmdletTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ProtectedFileProviderTests.cs.html " style="width:auto; font-size:40px">ProtectedFileProviderTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.PSSerializationTests.cs.html " style="width:auto; font-size:40px">PSSerializationTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.SessionInitializationTests.cs.html " style="width:auto; font-size:40px">SessionInitializationTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.TelemetryTests.cs.html " style="width:auto; font-size:40px">TelemetryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.TestHttpOperationsFactory.cs.html " style="width:auto; font-size:40px">TestHttpOperationsFactory.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.TypeConversionTests.cs.html " style="width:auto; font-size:40px">TypeConversionTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Cmdlets.html " style="width:auto; font-size:40px">Cmdlets</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Mocks.html " style="width:auto; font-size:40px">Mocks</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Properties.html " style="width:auto; font-size:40px">Properties</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Resources.html " style="width:auto; font-size:40px">Resources</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:30:54.848416<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.AuthenticationFactoryTests.cs.html " style="width:auto; font-size:40px">AuthenticationFactoryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.AzureSessionTests.cs.html " style="width:auto; font-size:40px">AzureSessionTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ClientFactoryHandlerTests.cs.html " style="width:auto; font-size:40px">ClientFactoryHandlerTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ClientFactoryTests.cs.html " style="width:auto; font-size:40px">ClientFactoryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.CommonDataCmdletTests.cs.html " style="width:auto; font-size:40px">CommonDataCmdletTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ContextModelTests.cs.html " style="width:auto; font-size:40px">ContextModelTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ConversionUtilitiesTests.cs.html " style="width:auto; font-size:40px">ConversionUtilitiesTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.LoginTests.cs.html " style="width:auto; font-size:40px">LoginTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.LongRunningCmdletTests.cs.html " style="width:auto; font-size:40px">LongRunningCmdletTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.ProtectedFileProviderTests.cs.html " style="width:auto; font-size:40px">ProtectedFileProviderTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.PSSerializationTests.cs.html " style="width:auto; font-size:40px">PSSerializationTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.SessionInitializationTests.cs.html " style="width:auto; font-size:40px">SessionInitializationTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.TelemetryTests.cs.html " style="width:auto; font-size:40px">TelemetryTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.TestHttpOperationsFactory.cs.html " style="width:auto; font-size:40px">TestHttpOperationsFactory.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.TypeConversionTests.cs.html " style="width:auto; font-size:40px">TypeConversionTests.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Cmdlets.html " style="width:auto; font-size:40px">Cmdlets</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Mocks.html " style="width:auto; font-size:40px">Mocks</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Properties.html " style="width:auto; font-size:40px">Properties</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Accounts.Authentication.Test.Resources.html " style="width:auto; font-size:40px">Resources</a></p></div> </p>

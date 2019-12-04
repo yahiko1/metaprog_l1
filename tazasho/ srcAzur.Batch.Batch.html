@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:35.123725<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.BatchCmdletBase.cs.html " style="width:auto; font-size:40px">BatchCmdletBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.BatchObjectModelCmdletBase.cs.html " style="width:auto; font-size:40px">BatchObjectModelCmdletBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.NewApplicationPackageException.cs.html " style="width:auto; font-size:40px">NewApplicationPackageException.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.ApplicationPackages.html " style="width:auto; font-size:40px">ApplicationPackages</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Applications.html " style="width:auto; font-size:40px">Applications</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.BatchAccounts.html " style="width:auto; font-size:40px">BatchAccounts</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Certificates.html " style="width:auto; font-size:40px">Certificates</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.ComputeNodes.html " style="width:auto; font-size:40px">ComputeNodes</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.ComputeNodeUsers.html " style="width:auto; font-size:40px">ComputeNodeUsers</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Files.html " style="width:auto; font-size:40px">Files</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.help.html " style="width:auto; font-size:40px">help</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.HelperCmdlets.html " style="width:auto; font-size:40px">HelperCmdlets</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Jobs.html " style="width:auto; font-size:40px">Jobs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.JobSchedules.html " style="width:auto; font-size:40px">JobSchedules</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Locations.html " style="width:auto; font-size:40px">Locations</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Models.html " style="width:auto; font-size:40px">Models</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Models.Generated.html " style="width:auto; font-size:40px">Models.Generated</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Pools.html " style="width:auto; font-size:40px">Pools</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Properties.html " style="width:auto; font-size:40px">Properties</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.StartupScripts.html " style="width:auto; font-size:40px">StartupScripts</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Tasks.html " style="width:auto; font-size:40px">Tasks</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Utils.html " style="width:auto; font-size:40px">Utils</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:30:55.961248<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.BatchCmdletBase.cs.html " style="width:auto; font-size:40px">BatchCmdletBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.BatchObjectModelCmdletBase.cs.html " style="width:auto; font-size:40px">BatchObjectModelCmdletBase.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.NewApplicationPackageException.cs.html " style="width:auto; font-size:40px">NewApplicationPackageException.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.ApplicationPackages.html " style="width:auto; font-size:40px">ApplicationPackages</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Applications.html " style="width:auto; font-size:40px">Applications</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.BatchAccounts.html " style="width:auto; font-size:40px">BatchAccounts</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Certificates.html " style="width:auto; font-size:40px">Certificates</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.ComputeNodes.html " style="width:auto; font-size:40px">ComputeNodes</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.ComputeNodeUsers.html " style="width:auto; font-size:40px">ComputeNodeUsers</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Files.html " style="width:auto; font-size:40px">Files</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.help.html " style="width:auto; font-size:40px">help</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.HelperCmdlets.html " style="width:auto; font-size:40px">HelperCmdlets</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Jobs.html " style="width:auto; font-size:40px">Jobs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.JobSchedules.html " style="width:auto; font-size:40px">JobSchedules</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Locations.html " style="width:auto; font-size:40px">Locations</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Models.html " style="width:auto; font-size:40px">Models</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Models.Generated.html " style="width:auto; font-size:40px">Models.Generated</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Pools.html " style="width:auto; font-size:40px">Pools</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Properties.html " style="width:auto; font-size:40px">Properties</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.StartupScripts.html " style="width:auto; font-size:40px">StartupScripts</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Tasks.html " style="width:auto; font-size:40px">Tasks</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Batch.Batch.Utils.html " style="width:auto; font-size:40px">Utils</a></p></div> </p>

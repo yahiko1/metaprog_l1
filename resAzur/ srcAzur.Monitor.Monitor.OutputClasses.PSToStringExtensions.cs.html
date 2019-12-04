@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>doc_builder</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
+        </head>
+        <body>
+                
+        <div class="container-fluid">
+            <h1>C#Doc</h1>
+            <div><p>Date of generation - 2019-12-04 18:22:47.970101<br>Version of generator - 2.1</p></div>
+        <div class="row">
+            <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;srcAzur\Monitor\Monitor\OutputClasses\PSToStringExtensions.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Management.Monitor
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Management.Monitor.Models
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 15 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.WindowsAzure.Commands.Utilities.Common
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Text
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 18 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.Insights.OutputClasses
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 20 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;static&nbsp;&nbsp;class&nbsp;PSToStringExtensions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 25 </li> </p><p> <li>     /// %summary><br>    /// Extensions to the ToString methods to allow for indentation to be added when displying the results<br>    /// %/summary><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;StringBuilder&nbsp;AddSpacesInFront(this&nbsp;StringBuilder&nbsp;output,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 35 </li> </p><p> <li>         /// %summary><br>        /// Add spaces into the string builder<br>        /// %/summary><br>        /// %param name="output">The string builder%/param><br>        /// %param name="indentationTabs">The number of tab chars to insert%/param><br>        /// %returns>The input string builder with the tabs appended%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;LocalizableString&nbsp;inputString,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 51 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the Dimension including indentation<br>        /// %/summary><br>        /// %param name="inputString">The input string%/param><br>        /// %param name="indentationTabs">The number of tab chars to insert%/param><br>        /// %returns>A string representation of the LocalizableString%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;LocalizableString&nbsp;inputString,&nbsp;bool&nbsp;localizedValue)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 70 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the Dimension including indentation<br>        /// %/summary><br>        /// %param name="inputString">The input string%/param><br>        /// %param name="localizedValue">Flag to inidicate if the localized value must be printed or not%/param><br>        /// %returns>A string representation of the LocalizableString%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;RuleManagementEventDataSource&nbsp;ruleEventDataSource,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 83 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the ScaleCapacity including indentation<br>        /// %/summary><br>        /// %param name="ruleEventDataSource">The RuleManagementEventDataSource object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the ScaleCapacity including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;ManagementEventAggregationCondition&nbsp;aggregatedCondition,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 111 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the ManagementEventAggregationCondition including indentation<br>        /// %/summary><br>        /// %param name="aggregatedCondition">The ManagementEventAggregationCondition object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the ManagementEventAggregationCondition including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;RuleMetricDataSource&nbsp;ruleMetricDataSource,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 131 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the RuleMetricDataSource including indentation<br>        /// %/summary><br>        /// %param name="ruleMetricDataSource">The RuleMetricDataSource object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the RuleMetricDataSource including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<RuleAction>&nbsp;actions,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 151 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the RuleMetricDataSource including indentation<br>        /// %/summary><br>        /// %param name="actions">The RuleAction objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of RuleAction objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<string>&nbsp;strings,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 190 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of string including indentation<br>        /// %/summary><br>        /// %param name="strings">The list of string objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of string objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;ScaleCapacity&nbsp;scaleCapacity,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 208 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the ScaleCapacity including indentation<br>        /// %/summary><br>        /// %param name="scaleCapacity">The ScaleCapacity object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the ScaleCapacity including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;ScaleAction&nbsp;scaleAction,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 228 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the ScaleAction including indentation<br>        /// %/summary><br>        /// %param name="scaleAction">The ScaleAction object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the ScaleAction including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;MetricTrigger&nbsp;metricTrigger,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 249 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the MetricTrigger including indentation<br>        /// %/summary><br>        /// %param name="metricTrigger">The metricTrigger object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the MetricTrigger including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;TimeWindow&nbsp;timeWindow,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 274 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the TimeWindow including indentation<br>        /// %/summary><br>        /// %param name="timeWindow">The TimeWindow object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the TimeWindow including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;Recurrence&nbsp;recurrence,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 294 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the Recurrence including indentation<br>        /// %/summary><br>        /// %param name="recurrence">The Recurrence object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the Recurrence including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<ScaleRule>&nbsp;scaleRules,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 313 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of ScaleRule objects including indentation<br>        /// %/summary><br>        /// %param name="scaleRules">The list of ScaleRule objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of ScaleRule objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<WebhookNotification>&nbsp;webhookNotifications,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 327 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of WebhookNotification objects including indentation<br>        /// %/summary><br>        /// %param name="webhookNotifications">The list of WebhookNotification objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of WebhookNotification objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;AutoscaleProfile&nbsp;autoscaleProfile,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 341 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the AutoscaleProfile object including indentation<br>        /// %/summary><br>        /// %param name="autoscaleProfile">The AutoscaleProfile object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the AutoscaleProfile object including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;AutoscaleNotification&nbsp;autoscaleNotification,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 363 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the AutoscaleProfile object including indentation<br>        /// %/summary><br>        /// %param name="autoscaleNotification">The AutoscaleProfile object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the AutoscaleProfile object including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<AutoscaleProfile>&nbsp;profiles,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 384 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of AutoscaleProfile objects including indentation<br>        /// %/summary><br>        /// %param name="profiles">The list of AutoscaleProfile objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of AutoscaleProfile objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<AutoscaleNotification>&nbsp;notifications,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 398 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of AutoscaleNotification objects including indentation<br>        /// %/summary><br>        /// %param name="notifications">The list of AutoscaleNotification objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of AutoscaleNotification objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;RecurrentSchedule&nbsp;recurrentSchedule,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 412 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the RecurrentSchedule including indentation<br>        /// %/summary><br>        /// %param name="recurrentSchedule">The RecurrentSchedule object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the RecurrentSchedule including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;ScaleRule&nbsp;scaleRule,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 433 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the ScaleRule including indentation<br>        /// %/summary><br>        /// %param name="scaleRule">The ScaleRule object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the ScaleRule including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;WebhookNotification&nbsp;webhookNotification,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 452 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the WebhookNotification including indentation<br>        /// %/summary><br>        /// %param name="webhookNotification">The WebhookNotification object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the WebhookNotification including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IDictionary<string,&nbsp;string>&nbsp;dictionary,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 471 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of AutoscaleNotification objects including indentation<br>        /// %/summary><br>        /// %param name="dictionary">The 'string, string' dictionary object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the 'string, string' dictionary object including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;PSMetricValue&nbsp;metricValue,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 489 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the PSMetricValue<br>        /// %/summary><br>        /// %param name="metricValue">A PSMetricValue object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the PSMetricValue%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;IList<PSMetricValue>&nbsp;metricValues,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 509 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the list of PSMetricValue objects including indentation<br>        /// %/summary><br>        /// %param name="metricValues">The list of PSMetricValue objects%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the list of PSMetricValue objects including indentation%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;static&nbsp;&nbsp;string&nbsp;ToString(this&nbsp;RetentionPolicy&nbsp;retentionPolicy,&nbsp;int&nbsp;indentationTabs)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 523 </li> </p><p> <li>         /// %summary><br>        /// A string representation of the RetentionPolicy including indentation<br>        /// %/summary><br>        /// %param name="retentionPolicy">The RetentionPolicy object%/param><br>        /// %param name="indentationTabs">The number of tabs to insert in front of each member%/param><br>        /// %returns>A string representation of the RecurrentSchedule including indentation%/returns><br></li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

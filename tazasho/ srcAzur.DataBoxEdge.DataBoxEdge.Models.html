@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:36.273061<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeAlert.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeAlert.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeBandWidthSchedule.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeBandWidthSchedule.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeDevice.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeDevice.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeDeviceExtendedInfo.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeDeviceExtendedInfo.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeJob.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeJob.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeNetworkAdapter.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeNetworkAdapter.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeNetworkSetting.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeNetworkSetting.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeOrder.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeOrder.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeOrderStatus.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeOrderStatus.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeOrderTrackingInfo.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeOrderTrackingInfo.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeRole.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeRole.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeShare.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeShare.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeStorageAccountCredential.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeStorageAccountCredential.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeTrigger.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeTrigger.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeUpdateSummary.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeUpdateSummary.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeUser.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeUser.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.ResourceIDHandler.cs.html " style="width:auto; font-size:40px">ResourceIDHandler.cs</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:31:01.500435<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeAlert.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeAlert.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeBandWidthSchedule.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeBandWidthSchedule.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeDevice.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeDevice.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeDeviceExtendedInfo.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeDeviceExtendedInfo.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeJob.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeJob.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeNetworkAdapter.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeNetworkAdapter.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeNetworkSetting.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeNetworkSetting.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeOrder.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeOrder.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeOrderStatus.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeOrderStatus.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeOrderTrackingInfo.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeOrderTrackingInfo.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeRole.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeRole.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeShare.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeShare.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeStorageAccountCredential.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeStorageAccountCredential.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeTrigger.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeTrigger.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeUpdateSummary.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeUpdateSummary.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.PSDataBoxEdgeUser.cs.html " style="width:auto; font-size:40px">PSDataBoxEdgeUser.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.DataBoxEdge.DataBoxEdge.Models.ResourceIDHandler.cs.html " style="width:auto; font-size:40px">ResourceIDHandler.cs</a></p></div> </p>

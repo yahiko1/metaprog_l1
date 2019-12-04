@@ -79,7 +79,7 @@ def run(filename):
                 p = re.search(class_pattern, line)
                 path.append(p.group(0))
                 mod = 1  # class mod ident
-                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                 token_list.append(token)
                 all_token_list.append(token)
                 p = None
@@ -91,7 +91,7 @@ def run(filename):
                 p = re.search(struct_pattern, line)
                 path.append(p.group(0))
                 mod = 2  # struct mod ident
-                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                 token_list.append(token)
                 all_token_list.append(token)
                 p = None
@@ -103,7 +103,7 @@ def run(filename):
                 p = re.search(interface_pattern, line)
                 path.append(p.group(0))
                 mod = 3  # class mod ident
-                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                 token_list.append(token)
                 all_token_list.append(token)
                 p = None
@@ -115,7 +115,7 @@ def run(filename):
                 p = re.search(namespace_pattern, line)
                 path.append(p.group(0))
                 mod = 4  # class mod ident
-                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                 token_list.append(token)
                 all_token_list.append(token)
                 p = None
@@ -125,7 +125,7 @@ def run(filename):
         if re.search(import_pattern, line) and re.search(";$", line):
             p = re.search(import_pattern, line)
             mod = 5  # import mod ident
-            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+            token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
             token_list.append(token)
             all_token_list.append(token)
             line_index += 1
@@ -138,7 +138,7 @@ def run(filename):
                     p = re.search(method_pattern, line)
                     path.append(p.group(0))
                     mod = 0  # method mod ident
-                    token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                    token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                     token_list.append(token)
                     all_token_list.append(token)
                     p = None
@@ -150,7 +150,7 @@ def run(filename):
                     p = re.search(method_group_pattern, line)
                     path.append(p.group(0))
                     mod = 0  # method mod ident
-                    token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                    token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                     token_list.append(token)
                     all_token_list.append(token)
                     p = None
@@ -161,7 +161,7 @@ def run(filename):
             if re.search(key_words, line) is None:
                 p = re.search(non_indent_var_pattern, line)
                 mod = 6  # var mod ident
-                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                 token_list.append(token)
                 all_token_list.append(token)
                 line_index += 1
@@ -172,7 +172,7 @@ def run(filename):
             if re.search(key_words, line) is None:
                 p = re.search(var_pattern, line)
                 mod = 6  # var mod ident
-                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line)
+                token = fill_struct_holder(line, p, mod, line_index, path, comment_buff, doc_comment_buff, line, filename)
                 token_list.append(token)
                 all_token_list.append(token)
 

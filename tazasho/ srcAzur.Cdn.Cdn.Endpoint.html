@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:35.578463<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.ConfirmAzureRmCdnEndpointProbeUrl.cs.html " style="width:auto; font-size:40px">ConfirmAzureRmCdnEndpointProbeUrl.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.GetAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">GetAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.GetAzureRmCdnEndpointNameAvailability.cs.html " style="width:auto; font-size:40px">GetAzureRmCdnEndpointNameAvailability.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.GetAzureRmCdnEndpointResourceUsage.cs.html " style="width:auto; font-size:40px">GetAzureRmCdnEndpointResourceUsage.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDdliveryRuleCondition.cs.html " style="width:auto; font-size:40px">NewAzCdnDdliveryRuleCondition.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDeliveryPolicy.cs.html " style="width:auto; font-size:40px">NewAzCdnDeliveryPolicy.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDeliveryRule.cs.html " style="width:auto; font-size:40px">NewAzCdnDeliveryRule.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDeliveryRuleAction.cs.html " style="width:auto; font-size:40px">NewAzCdnDeliveryRuleAction.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">NewAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.PublishAzureRmCdnEndpointContent.cs.html " style="width:auto; font-size:40px">PublishAzureRmCdnEndpointContent.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.RemoveAzureRmCdnEndnpoint.cs.html " style="width:auto; font-size:40px">RemoveAzureRmCdnEndnpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.SetAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">SetAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.StartAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">StartAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.StopAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">StopAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.TestAzureRmCdnCustomDomain.cs.html " style="width:auto; font-size:40px">TestAzureRmCdnCustomDomain.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.UnpublishAzureRmCdnEndpointContent.cs.html " style="width:auto; font-size:40px">UnpublishAzureRmCdnEndpointContent.cs</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:30:56.747632<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.ConfirmAzureRmCdnEndpointProbeUrl.cs.html " style="width:auto; font-size:40px">ConfirmAzureRmCdnEndpointProbeUrl.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.GetAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">GetAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.GetAzureRmCdnEndpointNameAvailability.cs.html " style="width:auto; font-size:40px">GetAzureRmCdnEndpointNameAvailability.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.GetAzureRmCdnEndpointResourceUsage.cs.html " style="width:auto; font-size:40px">GetAzureRmCdnEndpointResourceUsage.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDdliveryRuleCondition.cs.html " style="width:auto; font-size:40px">NewAzCdnDdliveryRuleCondition.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDeliveryPolicy.cs.html " style="width:auto; font-size:40px">NewAzCdnDeliveryPolicy.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDeliveryRule.cs.html " style="width:auto; font-size:40px">NewAzCdnDeliveryRule.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzCdnDeliveryRuleAction.cs.html " style="width:auto; font-size:40px">NewAzCdnDeliveryRuleAction.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.NewAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">NewAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.PublishAzureRmCdnEndpointContent.cs.html " style="width:auto; font-size:40px">PublishAzureRmCdnEndpointContent.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.RemoveAzureRmCdnEndnpoint.cs.html " style="width:auto; font-size:40px">RemoveAzureRmCdnEndnpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.SetAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">SetAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.StartAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">StartAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.StopAzureRmCdnEndpoint.cs.html " style="width:auto; font-size:40px">StopAzureRmCdnEndpoint.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.TestAzureRmCdnCustomDomain.cs.html " style="width:auto; font-size:40px">TestAzureRmCdnCustomDomain.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.Cdn.Cdn.Endpoint.UnpublishAzureRmCdnEndpointContent.cs.html " style="width:auto; font-size:40px">UnpublishAzureRmCdnEndpointContent.cs</a></p></div> </p>

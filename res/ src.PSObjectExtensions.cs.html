@@ -8,12 +8,157 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
         <div class="container-fluid">
             <h1>C#Doc</h1>
-            <div><p>Date of generation - 2019-12-01 15:53:11.896222<br>Version of generator - 2.1</p></div>
+            <div><p>Date of generation - 2019-12-04 18:18:30.715712<br>Version of generator - 2.1</p></div>
         <div class="row">
             <div class="col-sm-15 list-group" style="overflow: auto; margin: 10px;"> <h4>html_name</h4>
-                <p>root&nbsp;&nbsp;src\PSObjectExtensions.cs</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.Common.Authentication.Abstractions</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Management.Automation</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Text</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Threading.Tasks</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>└──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.Profile.Common</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;static&nbsp;&nbsp;class&nbsp;PSObjectExtensions</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;HasProperty(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Determine&nbsp;if&nbsp;a&nbsp;given&nbsp;PSObject&nbsp;has&nbsp;a&nbsp;property&nbsp;with&nbsp;the&nbsp;given&nbsp;name</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="source">The&nbsp;PSObject&nbsp;to&nbsp;check%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;look&nbsp;for%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%returns>true&nbsp;if&nbsp;the&nbsp;PSObject&nbsp;has&nbsp;a&nbsp;property&nbsp;with&nbsp;the&nbsp;given&nbsp;name,&nbsp;otherwise&nbsp;false%/returns></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;HasProperty<T>(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Determine&nbsp;if&nbsp;a&nbsp;given&nbsp;PSObject&nbsp;has&nbsp;a&nbsp;property&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;and&nbsp;type</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%typeparam&nbsp;name="T">The&nbsp;type&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;look&nbsp;for%/typeparam></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="source">The&nbsp;PSObject&nbsp;to&nbsp;check%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;proeprty&nbsp;to&nbsp;look&nbsp;for%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%returns>true&nbsp;if&nbsp;the&nbsp;PSObject&nbsp;has&nbsp;a&nbsp;property&nbsp;with&nbsp;the&nbsp;given&nbsp;name,&nbsp;otherwise&nbsp;false%/returns></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;TryGetProperty(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name,&nbsp;out&nbsp;object&nbsp;propertyValue)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Try&nbsp;to&nbsp;return&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;given&nbsp;property&nbsp;from&nbsp;the&nbsp;given&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="source">The&nbsp;PSObject&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;property&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;retrieve%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="propertyValue">The&nbsp;value&nbsp;of&nbsp;the&nbsp;property,&nbsp;if&nbsp;found&nbsp;in&nbsp;the&nbsp;given&nbsp;PSObject%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%returns>True&nbsp;if&nbsp;the&nbsp;property&nbsp;was&nbsp;found,&nbsp;otherwise&nbsp;false%/returns></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;TryGetProperty<T>(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name,&nbsp;out&nbsp;T&nbsp;propertyValue)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Try&nbsp;to&nbsp;return&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;given&nbsp;property&nbsp;from&nbsp;the&nbsp;given&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%typeparam&nbsp;name="T">The&nbsp;expected&nbsp;type&nbsp;of&nbsp;the&nbsp;property%/typeparam></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="source">The&nbsp;PSObject&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;property&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;retrieve%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="propertyValue">The&nbsp;value&nbsp;of&nbsp;the&nbsp;property,&nbsp;if&nbsp;found&nbsp;in&nbsp;the&nbsp;given&nbsp;PSObject%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%returns>True&nbsp;if&nbsp;the&nbsp;property&nbsp;was&nbsp;found,&nbsp;otherwise&nbsp;false%/returns></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;T&nbsp;GetProperty<T>(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Return&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;given&nbsp;property&nbsp;from&nbsp;the&nbsp;given&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%typeparam&nbsp;name="T">The&nbsp;expected&nbsp;type&nbsp;of&nbsp;the&nbsp;property%/typeparam></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="source">The&nbsp;PSObject&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;property&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;retrieve%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%returns>he&nbsp;property&nbsp;if&nbsp;found,&nbsp;otherwise&nbsp;the&nbsp;deefault&nbsp;value&nbsp;for&nbsp;T%/returns></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;object&nbsp;GetProperty(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Return&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;given&nbsp;property&nbsp;from&nbsp;the&nbsp;given&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="source">The&nbsp;PSObject&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;property&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;retrieve%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%returns>he&nbsp;property&nbsp;if&nbsp;found,&nbsp;otherwise&nbsp;null%/returns></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;PopulateExtensions(this&nbsp;IExtensibleModel&nbsp;model,&nbsp;PSObject&nbsp;other)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Populate&nbsp;the&nbsp;model&nbsp;extensions&nbsp;from&nbsp;a&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="model">The&nbsp;model&nbsp;to&nbsp;populate%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="other">The&nbsp;PSObject&nbsp;to&nbsp;populate&nbsp;it&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;Populate(this&nbsp;IDictionary<string,&nbsp;string>&nbsp;dictionary,&nbsp;string&nbsp;name,&nbsp;PSObject&nbsp;other)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Populate&nbsp;a&nbsp;generic&nbsp;string&nbsp;dictionary&nbsp;from&nbsp;a&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="dictionary">The&nbsp;dictionary&nbsp;to&nbsp;populate%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;property&nbsp;containing&nbsp;the&nbsp;dictionary%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="other">The&nbsp;PSObject&nbsp;to&nbsp;populate&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;Hashtable&nbsp;table;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;Populate(this&nbsp;IList<string>&nbsp;list,&nbsp;string&nbsp;name,&nbsp;PSObject&nbsp;other)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Populate&nbsp;a&nbsp;list&nbsp;from&nbsp;a&nbsp;proprty&nbsp;of&nbsp;the&nbsp;given&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="list">The&nbsp;list&nbsp;to&nbsp;populate%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="name">The&nbsp;name&nbsp;of&nbsp;the&nbsp;proeprty&nbsp;contiaing&nbsp;the&nbsp;list%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="other">The&nbsp;PSObject&nbsp;to&nbsp;populate&nbsp;the&nbsp;list&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;ArrayList&nbsp;array;</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;Populate(this&nbsp;IAzureTokenCache&nbsp;cache,&nbsp;PSObject&nbsp;other)</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Populate&nbsp;a&nbsp;token&nbsp;cache&nbsp;from&nbsp;a&nbsp;PSObject</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%/summary></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="cache">The&nbsp;cache&nbsp;to&nbsp;populate%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;%param&nbsp;name="other">The&nbsp;object&nbsp;to&nbsp;populate&nbsp;from%/param></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;&nbsp;bool&nbsp;IsOfType<T>(this&nbsp;PSPropertyInfo&nbsp;info)</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;static&nbsp;&nbsp;T&nbsp;GetValue<T>(this&nbsp;PSPropertyInfo&nbsp;info)</p><p>Documentation&nbsp;have&nbsp;not&nbsp;created</p></div> </div>  </body>
+                <p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p><ul id="myUL"><p> <li><span class="caret"> root&nbsp;&nbsp;src\PSObjectExtensions.cs
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: -1, scope: True, position: -1, str_found: -1 </li> </p><p> <li> </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;Microsoft.Azure.Commands.Common.Authentication.Abstractions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 14 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 15 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 16 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Collections.Generic
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 17 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Linq
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 18 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Management.Automation
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 19 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Text
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 20 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> ├──&nbsp;&nbsp;&nbsp;&nbsp;using&nbsp;System.Threading.Tasks
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 5, scope: True, position: 0, str_found: 21 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> └──&nbsp;&nbsp;&nbsp;&nbsp;namespace&nbsp;Microsoft.Azure.Commands.Profile.Common
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 4, scope: True, position: 0, str_found: 23 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;public&nbsp;static&nbsp;&nbsp;class&nbsp;PSObjectExtensions
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 1, scope: True, position: 4, str_found: 25 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;HasProperty(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 33 </li> </p><p> <li>         /// %summary><br>        /// Determine if a given PSObject has a property with the given name<br>        /// %/summary><br>        /// %param name="source">The PSObject to check%/param><br>        /// %param name="name">The name of the property to look for%/param><br>        /// %returns>true if the PSObject has a property with the given name, otherwise false%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 38 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;HasProperty<T>(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 52 </li> </p><p> <li>         /// %summary><br>        /// Determine if a given PSObject has a property with the given name and type<br>        /// %/summary><br>        /// %typeparam name="T">The type of the property to look for%/typeparam><br>        /// %param name="source">The PSObject to check%/param><br>        /// %param name="name">The name of the proeprty to look for%/param><br>        /// %returns>true if the PSObject has a property with the given name, otherwise false%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 57 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;TryGetProperty(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name,&nbsp;out&nbsp;object&nbsp;propertyValue)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 72 </li> </p><p> <li>         /// %summary><br>        /// Try to return the value of the given property from the given PSObject<br>        /// %/summary><br>        /// %param name="source">The PSObject to retrieve the property from%/param><br>        /// %param name="name">The name of the property to retrieve%/param><br>        /// %param name="propertyValue">The value of the property, if found in the given PSObject%/param><br>        /// %returns>True if the property was found, otherwise false%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 78 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 20, str_found: 81 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;bool&nbsp;TryGetProperty<T>(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name,&nbsp;out&nbsp;T&nbsp;propertyValue)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 98 </li> </p><p> <li>         /// %summary><br>        /// Try to return the value of the given property from the given PSObject<br>        /// %/summary><br>        /// %typeparam name="T">The expected type of the property%/typeparam><br>        /// %param name="source">The PSObject to retrieve the property from%/param><br>        /// %param name="name">The name of the property to retrieve%/param><br>        /// %param name="propertyValue">The value of the property, if found in the given PSObject%/param><br>        /// %returns>True if the property was found, otherwise false%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 104 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 20, str_found: 107 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;T&nbsp;GetProperty<T>(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 126 </li> </p><p> <li>         /// %summary><br>        /// Return the value of the given property from the given PSObject<br>        /// %/summary><br>        /// %typeparam name="T">The expected type of the property%/typeparam><br>        /// %param name="source">The PSObject to retrieve the property from%/param><br>        /// %param name="name">The name of the property to retrieve%/param><br>        /// %returns>he property if found, otherwise the deefault value for T%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 131 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 20, str_found: 134 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;object&nbsp;GetProperty(this&nbsp;PSObject&nbsp;source,&nbsp;string&nbsp;name)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 151 </li> </p><p> <li>         /// %summary><br>        /// Return the value of the given property from the given PSObject<br>        /// %/summary><br>        /// %param name="source">The PSObject to retrieve the property from%/param><br>        /// %param name="name">The name of the property to retrieve%/param><br>        /// %returns>he property if found, otherwise null%/returns><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;&nbsp;&nbsp;var&nbsp;props&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 16, str_found: 156 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;var&nbsp;prop&nbsp;=&nbsp;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 20, str_found: 159 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;PopulateExtensions(this&nbsp;IExtensibleModel&nbsp;model,&nbsp;PSObject&nbsp;other)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 175 </li> </p><p> <li>         /// %summary><br>        /// Populate the model extensions from a PSObject<br>        /// %/summary><br>        /// %param name="model">The model to populate%/param><br>        /// %param name="other">The PSObject to populate it from%/param><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;Populate(this&nbsp;IDictionary<string,&nbsp;string>&nbsp;dictionary,&nbsp;string&nbsp;name,&nbsp;PSObject&nbsp;other)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 186 </li> </p><p> <li>         /// %summary><br>        /// Populate a generic string dictionary from a PSObject<br>        /// %/summary><br>        /// %param name="dictionary">The dictionary to populate%/param><br>        /// %param name="name">The name of the property containing the dictionary%/param><br>        /// %param name="other">The PSObject to populate from%/param><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;Hashtable&nbsp;table;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 188 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;Populate(this&nbsp;IList<string>&nbsp;list,&nbsp;string&nbsp;name,&nbsp;PSObject&nbsp;other)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 215 </li> </p><p> <li>         /// %summary><br>        /// Populate a list from a proprty of the given PSObject<br>        /// %/summary><br>        /// %param name="list">The list to populate%/param><br>        /// %param name="name">The name of the proeprty contiaing the list%/param><br>        /// %param name="other">The PSObject to populate the list from%/param><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;&nbsp;&nbsp;ArrayList&nbsp;array;
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 6, scope: False, position: 12, str_found: 217 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;public&nbsp;static&nbsp;&nbsp;void&nbsp;Populate(this&nbsp;IAzureTokenCache&nbsp;cache,&nbsp;PSObject&nbsp;other)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 236 </li> </p><p> <li>         /// %summary><br>        /// Populate a token cache from a PSObject<br>        /// %/summary><br>        /// %param name="cache">The cache to populate%/param><br>        /// %param name="other">The object to populate from%/param><br></li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──&nbsp;static&nbsp;&nbsp;bool&nbsp;IsOfType<T>(this&nbsp;PSPropertyInfo&nbsp;info)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 245 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> <p> <li><span class="caret"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;static&nbsp;&nbsp;T&nbsp;GetValue<T>(this&nbsp;PSPropertyInfo&nbsp;info)
+ </span> </p> 
+        <ul class="nested"><p> <li> mod: 0, scope: False, position: 8, str_found: 271 </li> </p><p> <li> No documentation have added yet
+ </li> </p> </ul> </li> </div> </div>  
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    </body>

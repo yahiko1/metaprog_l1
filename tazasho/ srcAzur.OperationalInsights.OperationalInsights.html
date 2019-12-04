@@ -8,9 +8,48 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <style>
+            ul, #myUL {
+              list-style-type: none;
+            }
+            
+            #myUL {
+              margin: 0;
+              padding: 0;
+            }
+            
+            .caret {
+              cursor: pointer;
+              -webkit-user-select: none; /* Safari 3.1+ */
+              -moz-user-select: none; /* Firefox 2+ */
+              -ms-user-select: none; /* IE 10+ */
+              user-select: none;
+            }
+            
+            .caret::before {
+              
+              color: black;
+              display: inline-block;
+              margin-right: 6px;
+            }
+            
+            .caret-down::before {
+              -ms-transform: rotate(90deg); /* IE 9 */
+              -webkit-transform: rotate(90deg); /* Safari */'
+              transform: rotate(90deg);  
+            }
+            
+            .nested {
+              display: none;
+            }
+            
+            .active {
+              display: block;
+            }
+            </style>
         </head>
         <body>
                 
                         <div class="container-fluid">
                             <h1>C#Doc</h1>
-                            <div><p>Date of generation - 2019-11-30 12:36:40.704768<br>Version of generator - 2.1</div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.CloudExceptionExtensions.cs.html " style="width:auto; font-size:40px">CloudExceptionExtensions.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Constants.cs.html " style="width:auto; font-size:40px">Constants.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.OperationalInsightsBaseCmdlet.cs.html " style="width:auto; font-size:40px">OperationalInsightsBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.ProvisioningFailedException.cs.html " style="width:auto; font-size:40px">ProvisioningFailedException.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Client.html " style="width:auto; font-size:40px">Client</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.DataSources.html " style="width:auto; font-size:40px">DataSources</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.help.html " style="width:auto; font-size:40px">help</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Models.html " style="width:auto; font-size:40px">Models</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Properties.html " style="width:auto; font-size:40px">Properties</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Query.html " style="width:auto; font-size:40px">Query</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Search.html " style="width:auto; font-size:40px">Search</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.StartupScripts.html " style="width:auto; font-size:40px">StartupScripts</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.StorageInsights.html " style="width:auto; font-size:40px">StorageInsights</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Workspaces.html " style="width:auto; font-size:40px">Workspaces</a></p></div> </p>
+                            <div><p>Date of generation - 2019-12-04 18:31:07.917433<br>Version of generator - 2.1<p><a href=" index.html " style="width:auto; font-size:10px">Index</a></p></div> </p> <div> <p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.CloudExceptionExtensions.cs.html " style="width:auto; font-size:40px">CloudExceptionExtensions.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Constants.cs.html " style="width:auto; font-size:40px">Constants.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.OperationalInsightsBaseCmdlet.cs.html " style="width:auto; font-size:40px">OperationalInsightsBaseCmdlet.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.ProvisioningFailedException.cs.html " style="width:auto; font-size:40px">ProvisioningFailedException.cs</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Client.html " style="width:auto; font-size:40px">Client</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.DataSources.html " style="width:auto; font-size:40px">DataSources</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.help.html " style="width:auto; font-size:40px">help</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Models.html " style="width:auto; font-size:40px">Models</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Properties.html " style="width:auto; font-size:40px">Properties</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Query.html " style="width:auto; font-size:40px">Query</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Search.html " style="width:auto; font-size:40px">Search</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.StartupScripts.html " style="width:auto; font-size:40px">StartupScripts</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.StorageInsights.html " style="width:auto; font-size:40px">StorageInsights</a></p><p><a href=" C:\yato\python_things\l1_v2\tazasho\ srcAzur.OperationalInsights.OperationalInsights.Workspaces.html " style="width:auto; font-size:40px">Workspaces</a></p></div> </p>
